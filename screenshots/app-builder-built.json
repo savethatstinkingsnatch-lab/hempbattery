@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Bast — the hemp cell, explained",
+      "hasCanvas": false,
+      "bodyTextLen": 10113,
+      "bodyTextHash": "14709d5a9c6e2019b35d30b3d257da72d4d86ecfc12b87ed32bf2c2d6dbdec25",
+      "bodyTextPrefix": "Skip to the guide Bast Field guide Fiber Process Cell Numbers Li",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Bast — the hemp cell, explained",
+      "hasCanvas": false,
+      "bodyTextLen": 10101,
+      "bodyTextHash": "c65bcfa5dd030938704d2b5af79ee8b06da9b08e1f387b356e64d2ab6e89888b",
+      "bodyTextPrefix": "Skip to the guide Bast Fiber Process Cell Numbers Limits Check H",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,102 @@
+@import "@fontsource/fraunces/latin-600.css";
+@import "@fontsource/fraunces/latin-600-italic.css";
+@import "@fontsource/fraunces/latin-700.css";
+@import "@fontsource/outfit/latin-400.css";
+@import "@fontsource/outfit/latin-500.css";
+@import "@fontsource/outfit/latin-600.css";
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3eee4;
+  --color-paper-deep: #e4dccb;
+  --color-ink: #1c1915;
+  --color-muted: #6e675e;
+  --color-surface: #faf7f1;
+  --color-fiber: #245c42;
+  --color-fiber-ink: #f3f6f1;
+  --color-kiln: #8d4c1c;
+  --color-kiln-soft: #f3d7b8;
+  --color-line: #e0d6c6;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-fiber);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-fiber) 28%, white);
+    color: var(--color-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+.pore-fiber {
+  background-color: var(--color-fiber);
+  background-image: repeating-linear-gradient(
+    100deg,
+    transparent,
+    transparent 7px,
+    color-mix(in oklab, var(--color-fiber-ink) 22%, transparent) 7px,
+    color-mix(in oklab, var(--color-fiber-ink) 22%, transparent) 8px
+  );
+}
+
+.pore-kiln {
+  background-color: var(--color-kiln-soft);
+  background-image: repeating-linear-gradient(
+    80deg,
+    transparent,
+    transparent 7px,
+    color-mix(in oklab, var(--color-kiln) 28%, transparent) 7px,
+    color-mix(in oklab, var(--color-kiln) 28%, transparent) 8px
+  );
+}
+
+.ion {
+  transition:
+    left 300ms ease,
+    top 300ms ease;
+}
