@@ -3,18 +3,18 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Bast";
+const APP_NAME = "Volume 30: Hemp Batteries (The Education Revolution)";
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bast — the hemp cell, explained" },
+      { title: APP_NAME },
       {
         name: "description",
         content:
-          "A field guide to the rechargeable hemp-bast carbon cell: what the 2013 lab actually made, how the fiber becomes nanosheets, and why it is not a kitchen project.",
+          "Volume 30 of The Education Revolution, by Blue and the Awesome Dudes. A field guide to the rechargeable hemp-bast carbon cell: what the 2013 lab actually made, how the fiber becomes nanosheets, and why it is not a kitchen project.",
       },
       { name: "theme-color", content: "#f3eee4" },
     ],

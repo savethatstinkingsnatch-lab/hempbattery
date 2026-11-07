@@ -181,8 +181,8 @@ function SiteHeader() {
     <header className="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
         <a href="#content" className="flex items-baseline gap-2">
-          <span className="font-display text-xl tracking-tight">Bast</span>
-          <span className="hidden text-sm text-muted sm:inline">Field guide</span>
+          <span className="font-display text-xl tracking-tight">Volume 30: Hemp Batteries</span>
+          <span className="hidden text-sm text-muted sm:inline">The Education Revolution</span>
         </a>
         <nav aria-label="Guide" className="flex min-w-0 gap-1 overflow-x-auto">
           {nav.map((item) => (
