@@ -1,8 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { a as require_jsx_runtime, o as require_react } from "../_libs/@radix-ui/react-collection+[...].mjs";
+import { a as require_react, o as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
+import { i as VOLUME_LINE, r as Shell, t as EDITION } from "./shell-kjoUljAS.mjs";
+import { t as SourcesList } from "./sources-list-C4n-y1oX.mjs";
+import { t as Cited } from "./cited-COH1AeM_.mjs";
 import { i as SliderTrack, n as SliderRange, r as SliderThumb, t as Slider } from "../_libs/@radix-ui/react-slider+[...].mjs";
 import { a as Bar, i as CartesianGrid, n as YAxis, o as ResponsiveContainer, r as XAxis, s as Tooltip, t as BarChart } from "../_libs/recharts+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-6ayh9n1P.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-aFWzLpgG.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var cations = [
@@ -86,19 +89,19 @@ function CellSim() {
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 						className: "size-3 rounded-full bg-fiber",
 						"aria-hidden": "true"
-					}), "Cation, heads for the negative electrode"]
+					}), "Cation. An outside source drives it toward the negative electrode while charging."]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 					className: "inline-flex items-center gap-2",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 						className: "size-3 rounded-full bg-kiln",
 						"aria-hidden": "true"
-					}), "Anion, heads for the positive electrode"]
+					}), "Anion. Charging drives it toward the positive electrode. In use, both flow back. That return is discharge."]
 				})]
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				id: "soc-label",
 				className: "mt-5 text-sm font-medium",
-				children: "State of charge"
+				children: "State of charge. Raising it is charging, and that takes an outside source. Lowering it, in a real cell, is discharge."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Slider, {
 				value: [soc],
@@ -115,7 +118,7 @@ function CellSim() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-4 max-w-2xl text-sm leading-relaxed text-muted",
-				children: resting ? "Discharged. Cations and anions are mixed in the electrolyte. The two carbon electrodes look the same, which is why this cell has no designated anode chemistry the way a lithium-ion cell does." : charged ? "Charged. Cations crowd the negative carbon, anions the positive. They are parked on the pore walls, not plated and not inserted into a host crystal. Reverse the current and they drift back. That is the recharge." : "Charging separates the ions. Energy goes up because you have pushed positive and negative charges apart onto a very large carbon surface. The slider does not compute a pack size."
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: resting ? "Discharged. The ions are mixed. If the cell just did work, they flowed back and energy came out. That flow is discharge, not a recharge." : charged ? "Charged. An outside source has separated the ions onto the two carbons. They use the carbon surface, including the walls inside the pores. They are not plated as a metal. Using the cell lets them flow back, and that return is discharge. Recharging means connecting a source again to push them apart." : "Partway between. Charging, from an outside source, separates the ions and puts energy in. Discharge, when the cell is used, lets the ions return and energy come out. The slider does not size a pack." })
 			})
 		]
 	});
@@ -147,25 +150,25 @@ var layers = [
 		id: "s1",
 		name: "S1, outer wall",
 		range: "Comes off in the hydrothermal step",
-		body: "The thin outer layer of the bast fiber. At 180°C in water, under pressure, it does not survive as a sheet. It is not the carbon you keep."
+		body: "The thin outer layer of the bast fiber. The authors’ account is that the 180°C hydrothermal step takes it off. That is their explanation of the micrographs, not a separate measurement. [6]"
 	},
 	{
 		id: "s2",
 		name: "S2, the useful wall",
 		range: "Microfibrils about 10–30 nm across",
-		body: "The thick middle layer. It is built from cellulose microfibrils. Hydrothermal treatment loosens the ties between them. Molten potassium hydroxide then pries those fibrils apart into carbon nanosheets of roughly the same thickness."
+		body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then pries the fibrils into sheets of about that thickness. “Pries apart” is their picture of the process, not a settled fact. [1] [6]"
 	},
 	{
 		id: "s3",
 		name: "S3, inner wall",
 		range: "Also stripped hydrothermally",
-		body: "The thin layer facing the hollow core. Like S1, it is removed when hemicellulose and part of the lignin dissolve. What remains to be split is S2."
+		body: "The thin layer facing the hollow core. In the authors’ account it leaves with S1 during the hydrothermal step, when much of the hemicellulose and part of the lignin dissolve. [6]"
 	},
 	{
 		id: "lumen",
 		name: "Lumen",
 		range: "The hollow core",
-		body: "A bast fiber is a tube, about 10–30 micrometers across. The lumen is the empty middle. It is not a reservoir of charge. The charge, later, sits on the pore walls of the carbon made from S2."
+		body: "A bast fiber is a hollow tube, about 10–30 micrometers across, in the authors’ description. [6] The lumen is that empty middle. It is not a reservoir of charge. In the supercapacitor, ions use the carbon surface, including the walls inside the pores. They are not stored in this hollow core, and the paper does not say they insert into the solid."
 	}
 ];
 var stations = [
@@ -175,19 +178,19 @@ var stations = [
 		title: "Separate the bast",
 		summary: "The precursor is the long fiber in the stalk bark — not the flower, the seed, or the woody core.",
 		hazard: "Dust. This is the only ordinary step.",
-		changes: "Industrial hemp is retted and the bast is pulled from the hurd. Bast has the layered, hollow-fiber architecture the rest of the process exploits. Hurd can be charred into ordinary carbon. It does not split into these nanosheets.",
-		conditions: "The 2013 work starts from hemp bast fiber. Nothing in the paper depends on flowers, resin, or oil.",
+		changes: "The 2013 work starts from bast, the long fiber in the stalk bark, pulled off the woody hurd. The authors’ explanation is that bast’s layered wall is what lets the later steps make nanosheets. The paper does not test hurd, so this guide does not claim hurd cannot make sheets. [1] [6]",
+		conditions: "Hemp bast fiber is the precursor they report. Flowers, resin, and oil are not part of that experiment. [1]",
 		equipment: "A fiber mill, or hand separation of retted stalk. No chemistry yet.",
-		notHome: "Growing hemp is agriculture, and legality depends on where you are. Growing it does not produce a cell. It produces a precursor for a furnace."
+		notHome: "Under 7 U.S.C. § 1639o, hemp is Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [4] [5]"
 	},
 	{
 		id: "hydro",
 		n: "02",
 		title: "Loosen the wall in hot water",
-		summary: "A sealed vessel holds the fiber at 180°C for 24 hours. The yarn breaks into small pieces of hydrochar.",
+		summary: "A sealed vessel holds the fiber in hot water. ASME reports 180°C for 24 hours. The paper’s own account of the step is the chemistry, not a timer you should copy.",
 		hazard: "Pressurized hot liquid. A failed seal is a steam explosion.",
-		changes: "Most of the hemicellulose, and part of the lignin, dissolve. Crystalline cellulose is only partly carbonized. S1 and S3 come away. In S2, the connections between microfibrils loosen, which is the entire point of this step.",
-		conditions: "Hydrothermal carbonization at 180°C for 24 hours, as reported for this precursor.",
+		changes: "The authors write that most of the hemicellulose, and part of the lignin, dissolve, that crystalline cellulose is only partly carbonized, and that S1 and S3 come away while S2 loosens. That is their proposed account of why sheets can form later. [6]",
+		conditions: "The paper describes hydrothermal carbonization at 180°C. The 24-hour hold is in the ASME account of the same work, not a line this guide found in the abstract. [1] [3] [6]",
 		equipment: "A hydrothermal autoclave rated for the vapor pressure of water at that temperature, with a chemically compatible liner, in a lab that can vent and contain a failure.",
 		notHome: "A kitchen pressure cooker is the wrong vessel. It is not rated for this, it is not meant to hold plant slurry against a failed gasket, and it will contaminate anything you eat from afterwards. There is no safe substitute."
 	},
@@ -195,10 +198,10 @@ var stations = [
 		id: "activate",
 		n: "03",
 		title: "Split the fibrils with potassium hydroxide",
-		summary: "The hydrochar is heated with KOH to 700–800°C. Layers separate into sheets 10–30 nm thick.",
+		summary: "The hydrochar is heated with potassium hydroxide. The paper discusses 700–800°C. ASME says the heat reached as high as 800°C.",
 		hazard: "Molten caustic at furnace temperature. Severe burns even before it is hot.",
-		changes: "The KOH melt wicks into the loosened gaps and peels S2 into interconnected, partly graphitic nanosheets. It also etches micropores and mesopores. Reported peaks: surface area up to 2,287 m² per gram, mesoporosity up to 58 percent, conductivity about 211–226 S/m. The samples are named by activation temperature — CNS-700, CNS-800, and so on.",
-		conditions: "Potassium hydroxide activation between 700°C and 800°C.",
+		changes: "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements, rather than that proposal, are a surface area up to 2,287 m²/g, mesoporosity up to 58 percent, conductivity about 211–226 S/m, and sheets about 10–30 nm thick. The sheets are partially graphitic carbon. Samples are named by activation temperature. [1]",
+		conditions: "Potassium hydroxide activation. The paper’s range is 700–800°C. [6] ASME’s ceiling is 800°C. [3] Neither source is a recipe with amounts.",
 		equipment: "A furnace that can hold that temperature, an inert or controlled atmosphere, a boat that KOH will not destroy, and a fume hood. KOH attacks skin, eyes, aluminum, and glass.",
 		notHome: "Do not substitute drain cleaner. Do not use a pottery kiln, a grill, or an oven. The melt is caustic, the off-gas is not something to breathe, and a household scale-up is how people lose eyes and start fires. This step has no domestic version."
 	},
@@ -206,12 +209,12 @@ var stations = [
 		id: "wash",
 		n: "04",
 		title: "Wash the alkali out",
-		summary: "Residual KOH has to leave the carbon, or the electrode and the electrolyte are both ruined.",
-		hazard: "Caustic wastewater. It is chemical waste, not sink water.",
-		changes: "Washing neutralizes and removes leftover potassium salts so the pores stay open and the surface is carbon, not caustic. Drying leaves a fine black powder of nanosheets. That powder is the active material.",
-		conditions: "A laboratory wash to neutral, then drying. The paper’s performance figures are for cleaned carbon.",
-		equipment: "Filtration, plenty of rinse water, pH checks, and a waste container rated for alkali.",
-		notHome: "Pouring this wash down a drain dumps caustic into plumbing and the watershed. The powder is also a fine dust you do not want in your lungs."
+		summary: "Residual alkali has to leave the carbon before it is an electrode. This page does not say how.",
+		hazard: "Caustic waste. Do not neutralize it at home.",
+		changes: "This station is here so the alkali is not forgotten. The figures belong to carbons a laboratory had already finished with. This page does not describe a wash, an acid, or a way to treat leftover potassium hydroxide.",
+		conditions: "A laboratory wash, then drying. This guide does not give volumes, acids, or a neutralization method.",
+		equipment: "Whatever that lab used to filter and collect alkali waste. Not a kitchen sink.",
+		notHome: "Do not neutralize chemicals at home. Do not mix a homemade wash, an acid into a base, or a base into a drain. Caustic wastewater is laboratory waste. The powder is also a dust you do not want in your lungs."
 	},
 	{
 		id: "electrode",
@@ -219,39 +222,39 @@ var stations = [
 		title: "Make an electrode, not a lump of carbon",
 		summary: "Sheets only store charge if they are bound to a current collector, with a path for electrons.",
 		hazard: "Solvents and powders, handled in a hood.",
-		changes: "The carbon is blended with a conductive additive and a binder, spread as a film on a metal current collector, dried, and pressed. Two films, matched in mass, become the two electrodes. This page does not give a slurry recipe. A guessed ratio will not reproduce the paper, and it is not the dangerous-looking step — the furnace was.",
+		changes: "The abstract reports capacitance for the electrode and, separately, energy for an assembled device. [1] [2] It does not give a slurry, a binder ratio, or a current-collector recipe, and neither does this page. A guessed film will not reproduce the paper.",
 		conditions: "Standard electrode fabrication. The published capacitance is per gram of this active carbon, measured on a potentiostat, not on a multimeter at the kitchen table.",
 		equipment: "A coater or a lab draw-down, a vacuum oven, a calender or press, a balance.",
-		notHome: "Smearing charcoal onto foil does not make these nanosheets, and it does not make a stable rechargeable cell. Solvents used in electrode slurries are often flammable and toxic."
+		notHome: "Smearing charcoal onto foil does not make these nanosheets. This page gives no slurry recipe. Solvents used for electrode films are often flammable."
 	},
 	{
 		id: "cell",
 		n: "06",
 		title: "Assemble a two-electrode test cell",
-		summary: "Two carbon electrodes, a separator, and an ionic liquid. That stack is the rechargeable device.",
-		hazard: "A sealed energy-storage cell. Short it, and the energy leaves as heat.",
-		changes: "Ions from the electrolyte move to opposite electrodes when you charge the cell, and move back when you discharge it. Nothing is burned. In this device the ions sit on the carbon surface — an electric double layer — rather than inserting into a crystal the way lithium does in a lithium-ion battery. The paper’s full device stored up to about 12 Wh per kilogram.",
-		conditions: "Ionic-liquid electrolyte. The headline results span roughly 0°C to 100°C. That temperature window is a property of the electrolyte and the carbon, not an invitation to heat a homemade cell.",
-		equipment: "A separator, ionic liquid handled dry, a coin-cell or pouch crimp inside a dry environment, and a potentiostat to charge and measure it.",
-		notHome: "Do not invent an electrolyte. Water with table salt is a different, low-voltage experiment, and sealing it between random metals makes hydrogen, corrosion, and a mess — not this device. Buy a commercial cell if you need a rechargeable battery. Study this one in a lab."
+		summary: "Two carbon electrodes, a separator, and an ionic liquid. Charging it takes an outside source. Using it is discharge.",
+		hazard: "A sealed cell, and an electrolyte you do not mix.",
+		changes: "When an outside source charges the cell, ions move to opposite electrodes and energy goes in. When the cell is used, those ions flow back and energy comes out. That return is discharge, not a recharge. Recharging means connecting a source again. The ions use the carbon surface, including the walls inside the pores. They are not plated as a metal, and the paper does not say they insert into the solid. The abstract reports about 12 Wh/kg for the assembled device and does not itemize that kilogram. [1] [2]",
+		conditions: "Ionic-liquid electrolyte. The headline results span about 0°C to 100°C. That is a reported test window, not an invitation to heat a homemade cell. [1]",
+		equipment: "A separator, ionic liquid handled dry, a test-cell stack, and a potentiostat. No amounts are given here.",
+		notHome: "Do not mix electrolytes. Do not combine liquids, salts, or solvents to imitate an ionic liquid. Water with table salt is a different experiment, and this page will not turn it into one. If you need a cell, buy one that was certified."
 	}
 ];
 var myths = [
 	{
 		claim: "Hemp beats graphene, so it replaces a lithium battery.",
-		fact: "The 2013 carbons matched graphene electrodes of that era on a supercapacitor Ragone plot. They are partly graphitic nanosheets, not graphene, and the full device stored about 12 Wh/kg. A modern lithium-ion cell is often 150–250 Wh/kg. Different job."
+		fact: "The paper reports strong power-energy numbers for a supercapacitor, on an active-mass basis, and about 12 Wh/kg for the assembled device. The sheets are partially graphitic carbon. [1] ASME wrote that the material outperforms graphene. That sentence is the magazine’s, and this guide does not adopt it. [3]"
 	},
 	{
 		claim: "You can grow a battery.",
-		fact: "You can grow a precursor, where that crop is legal. The cell is a product of a pressure vessel and an 800°C furnace. The plant does not arrive charged."
+		fact: "You can grow a legal precursor only if the crop is hemp under the statute and you are licensed to produce it. [4] [5] The cell is still the pressure vessel and furnace in the ASME account of this lab. [3] The plant does not arrive charged."
 	},
 	{
 		claim: "It is a lithium battery made of hemp.",
-		fact: "The device in the paper contains no lithium. Two hemp-carbon electrodes, a separator, an ionic liquid. Rechargeable, yes. A lithium-ion cell, no."
+		fact: "The device in the paper is an ionic-liquid supercapacitor made with the hemp-bast carbon. [1] The abstract does not describe a lithium-ion cell, and this guide will not compare the two on weight. An outside source can charge the supercapacitor again. That is what “rechargeable” means here."
 	},
 	{
 		claim: "Any part of the plant works the same.",
-		fact: "The sheet morphology comes from the bast fiber’s layered wall. Flower, leaf, and hurd do not follow the same path, even if they can be burned into some other carbon."
+		fact: "The 2013 route starts from bast. The authors propose that the layered wall is why sheets form. They do not test hurd, flower, or leaf, so this guide does not claim those tissues cannot make some other carbon. [1] [6]"
 	}
 ];
 var checks = [
@@ -277,7 +280,7 @@ var checks = [
 			}
 		],
 		answer: "bast",
-		why: "The hollow, layered bast fiber is what splits into nanosheets. The flower is irrelevant to the chemistry."
+		why: "Bast is the precursor the paper reports. The flower and the oil are not. The paper does not test hurd, so “hurd” is the wrong answer here without being a proof that hurd can never make carbon. [1] [6]"
 	},
 	{
 		id: "hydro",
@@ -301,7 +304,7 @@ var checks = [
 			}
 		],
 		answer: "loosen",
-		why: "Hydrothermal treatment only partly carbonizes the cellulose. The furnace and the KOH still have to finish the job."
+		why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours are from the ASME account. [3]"
 	},
 	{
 		id: "device",
@@ -325,7 +328,7 @@ var checks = [
 			}
 		],
 		answer: "edlc",
-		why: "Charge sits on the carbon surface in an electric double layer. It is rechargeable storage. It is not a lithium-ion battery."
+		why: "An ionic-liquid supercapacitor. [1] Charging it means an outside source puts energy in. When the cell is used, ions flow back and energy comes out. That is discharge, not the recharge."
 	},
 	{
 		id: "area",
@@ -349,7 +352,7 @@ var checks = [
 			}
 		],
 		answer: "double",
-		why: "After washing, the KOH is gone. What remains is carbon area for the double layer. That is also why the cell can dump its energy quickly — the ions never have to push inside a crystal."
+		why: "The double layer of this kind of cell forms on the carbon surface. That surface includes the walls inside the pores, which is why the abstract’s surface area, up to 2,287 m²/g, is the figure that matters. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores."
 	}
 ];
 var capacitance = [
@@ -503,7 +506,7 @@ function FiberFigure() {
 					children: paint[layer.id].label
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-2 text-lg leading-relaxed",
-					children: layer.body
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: layer.body })
 				})]
 			}),
 			active === "s2" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -519,7 +522,7 @@ function FiberFigure() {
 							"aria-pressed": split,
 							onClick: () => setSplit((value) => !value),
 							className: "min-h-11 rounded-full border border-fiber px-4 text-sm font-medium text-fiber",
-							children: split ? "Show the bound fibrils" : "Pry them into sheets"
+							children: split ? "Show the bound fibrils" : "Show the authors’ split"
 						})]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
@@ -535,7 +538,7 @@ function FiberFigure() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-4 text-sm leading-relaxed text-muted",
-						children: split ? "Molten KOH at 700–800°C finishes the separation. Each bar stands for a sheet on the order of 10–30 nanometers thick, now full of pores." : "Hydrothermal treatment only loosens the ties. The microfibrils are still a wall, not a stack of free sheets."
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: split ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets about 10–30 nm thick, full of pores. That picture is their explanation, not a settled fact. [1] [6]" : "Their account of the hydrothermal step is that it loosens S2. The microfibrils are still a wall. [6]" })
 					})
 				]
 			}) : null
@@ -572,14 +575,14 @@ function PublishedFigures() {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChartCard, {
 			kicker: "Specific capacitance at 100 A/g",
 			title: "Still high when the current is brutal",
-			note: "Farads per gram of active carbon. The 0°C point is not on this chart: at a milder 10 A/g the electrode held 106 F/g. Mixing that point in would make the cold result look weaker than the test it was given.",
+			note: "Farads per gram. The abstract’s 0°C point is not on this chart: at 10 A/g the electrode held 106 F/g. These three bars are the 100 A/g points. [1] [2]",
 			data: capacitance,
 			dataKey: "farads",
 			unit: "F/g"
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChartCard, {
 			kicker: "Energy at 20 kW/kg",
-			title: "Active mass, not the whole device",
-			note: "Watt-hours per kilogram of active material, at 20, 60, and 100°C. The sealed device — both electrodes, electrolyte, separator — reached about 12 Wh/kg. Use 12, not these bars, if you are comparing with a commercial cell.",
+			title: "Active mass, as the abstract says",
+			note: "The abstract gives 19, 34, and 40 Wh/kg at 20 kW/kg and says those power-energy figures are normalized to active mass. Separately, it reports 12 Wh/kg for the assembled device. It does not say what that device kilogram includes, so this guide does not either. [1] [2]",
 			data: energy,
 			dataKey: "wh",
 			unit: "Wh/kg"
@@ -671,7 +674,7 @@ function ChartCard({ kicker, title, note, data, dataKey, unit }) {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-3 text-sm leading-relaxed text-muted",
-				children: note
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: note })
 			})
 		]
 	});
@@ -788,7 +791,7 @@ function ReadingCheck() {
 					picked ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 						className: "mt-3 text-sm leading-relaxed text-muted",
 						"aria-live": "polite",
-						children: [picked === item.answer ? "Yes. " : "Not that one. ", item.why]
+						children: [picked === item.answer ? "Yes. " : "Not that one. ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: item.why })]
 					}) : null
 				]
 			}, item.id);
@@ -892,11 +895,11 @@ function Note({ kicker, body }) {
 			children: kicker
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 			className: "mt-2 text-sm leading-relaxed",
-			children: body
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: body })
 		})]
 	});
 }
-var nav = [
+var sections = [
 	{
 		href: "#fiber",
 		label: "Fiber"
@@ -923,213 +926,133 @@ var nav = [
 	}
 ];
 function Home() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-		className: "min-h-screen",
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Shell, {
+		sections,
 		children: [
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-				href: "#content",
-				className: "sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-fiber focus:px-4 focus:py-2 focus:text-fiber-ink",
-				children: "Skip to the guide"
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Caution, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChargeAndUse, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+				id: "fiber",
+				kicker: "01 — The precursor",
+				title: "A hollow fiber, not a leaf.",
+				lede: "The 2013 carbons start as bast, the long fiber in hemp bark. The authors describe a wall of three layers around an empty core, and they propose that the middle layer is what later becomes sheets. [1] [6]",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FiberFigure, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "mt-8 max-w-2xl text-base leading-relaxed text-muted",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "The woody hurd is not the tissue this paper used, and the paper does not prove hurd cannot make a carbon. [1] [6] Hemp in the statute is a crop, defined by THC, not a flower-power story. [4]" })
+				})]
 			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SiteHeader, {}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("main", {
-				id: "content",
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
+				id: "process",
+				kicker: "02 — The laboratory path",
+				title: "Six stations, from stalk to stack.",
+				lede: "Read this as a map of the paper and of the ASME account of the same lab. It is not a procedure. It has no amounts, and it has no safe home version.",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Stations, {})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+				id: "cell",
+				kicker: "03 — Charge and discharge",
+				title: "Ions sit on the carbon, including inside the pores.",
+				lede: "Charging takes an outside source and pushes the ions apart. Using the cell lets them flow back. That return is discharge. Recharging is a second visit from the outside source, not the return itself.",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CellSim, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mt-6 grid gap-4 md:grid-cols-3",
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+							title: "Charge",
+							body: "An outside source separates the ions and puts energy in. The slider moving up is that state, not a power supply."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+							title: "Discharge",
+							body: "In use, the ions flow back through the circuit and energy comes out. That return is discharge, not a recharge."
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+							title: "Where they sit",
+							body: "On the carbon surface, including the walls inside the pores. Not plated as a metal. The paper does not say they insert into the solid."
+						})
+					]
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+				id: "numbers",
+				kicker: "04 — What was measured",
+				title: "The figures, with the basis left where the paper left it.",
+				lede: "Wang and colleagues, ACS Nano, 2013. Ionic-liquid cells, carbon from hemp bast. ASME names the lab as University of Alberta / NINT, led by David Mitlin. [1] [3]",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Caution, {}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Devices, {}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
-						id: "fiber",
-						kicker: "01 — The precursor",
-						title: "A hollow fiber, not a leaf.",
-						lede: "The carbon in this cell starts as bast, the long fiber in hemp bark. Its wall is three layers around an empty core. The process is a way of peeling the middle layer into sheets.",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FiberFigure, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-8 max-w-2xl text-base leading-relaxed text-muted",
-							children: "Hemp here means industrial fiber hemp. The flowers are not an electrode. The woody hurd inside the stalk can be turned into charcoal, but it does not have this layered wall, so it does not become these nanosheets."
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
-						id: "process",
-						kicker: "02 — The laboratory path",
-						title: "Six stations, from stalk to stack.",
-						lede: "This is how the 2013 cell was made: hydrothermal carbonization, then potassium hydroxide at furnace temperature, then a washed carbon powder built into a supercapacitor. Read it as a map of the paper. It is not a procedure, and it has no safe home version.",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Stations, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
-						id: "cell",
-						kicker: "03 — How it charges",
-						title: "Ions park on the carbon. They do not go inside it.",
-						lede: "A supercapacitor is rechargeable because the ions can be sent back. Drag the charge and watch them separate. That separation, spread over thousands of square meters of pore wall in a single gram, is the stored energy.",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CellSim, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "mt-6 grid gap-4 md:grid-cols-3",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
-									title: "Recharge",
-									body: "Reverse the current and the ions drift back into the liquid. You are not regenerating a chemical fuel."
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
-									title: "Speed",
-									body: "Nothing has to squeeze into a crystal lattice, so the cell can take and give current that would stress a lithium-ion electrode."
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
-									title: "The limit",
-									body: "Surface storage holds less energy per kilogram than insertion chemistry. That is the trade the paper actually made."
-								})
-							]
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
-						id: "numbers",
-						kicker: "04 — What was measured",
-						title: "The figures people round off.",
-						lede: "Wang, Mitlin, and colleagues, ACS Nano, 2013. Ionic-liquid cells, carbon from hemp bast. The bars below are the paper’s points, not a projection of a product you could buy.",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PublishedFigures, {}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mt-6 max-w-xl rounded-card border border-line bg-surface p-5",
 						children: [
-							/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PublishedFigures, {}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "mt-6 grid gap-4 sm:grid-cols-2",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "rounded-card border border-line bg-surface p-5",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-display text-6xl tabular-nums tracking-tight text-fiber",
-											children: "12"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-2 font-medium",
-											children: "Wh/kg, the full device"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-2 text-sm leading-relaxed text-muted",
-											children: "Maximum energy density of the assembled supercapacitor. Higher than commercial supercapacitors they compared against in 2013. This is the honest “battery” number."
-										})
-									]
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "rounded-card border border-line bg-surface p-5",
-									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "font-display text-6xl tabular-nums tracking-tight",
-											children: "150–250"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-2 font-medium",
-											children: "Wh/kg, a modern lithium-ion cell"
-										}),
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-											className: "mt-2 text-sm leading-relaxed text-muted",
-											children: "A typical range, for scale only — not a result from this paper. Hemp carbon did not catch a lithium-ion cell on energy. It was never trying to be one."
-										})
-									]
-								})]
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "font-display text-6xl tabular-nums tracking-tight text-fiber",
+								children: "12"
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-6 max-w-2xl text-sm leading-relaxed text-muted",
-								children: "Power is the other half. At 20 kW per kilogram of active material the electrode still held 19, 34, and 40 Wh/kg at 20°C, 60°C, and 100°C. A 2013 ASME account of the same work quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those are press figures; the paper’s Ragone point used here is 20 kW/kg. Conductivity of the sheets was about 211–226 S/m."
+								className: "mt-2 font-medium",
+								children: "Wh/kg, the assembled device"
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-2 text-sm leading-relaxed text-muted",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "The abstract’s maximum for the assembled supercapacitor, higher than the commercial supercapacitors they compared it with. The abstract does not say which parts of the cell are inside that kilogram. This guide will not fill that in. [1] [2]" })
 							})
 						]
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
-						id: "limits",
-						kicker: "05 — What it is not",
-						title: "Four claims that outran the paper.",
-						lede: "The popular version collapsed a supercapacitor, a biomass precursor, and a lithium battery into one story. These are the seams.",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
-							className: "grid gap-4",
-							children: myths.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
-								className: "rounded-card border border-line bg-surface p-5",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "font-display text-xl tracking-tight",
-									children: item.claim
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-2 max-w-2xl leading-relaxed text-muted",
-									children: item.fact
-								})]
-							}, item.claim))
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "mt-6 rounded-card border border-kiln/50 bg-paper p-5",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "font-medium",
-								children: "If you need a rechargeable battery"
-							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "mt-2 max-w-2xl text-sm leading-relaxed text-muted",
-								children: "Buy a certified cell. Hemp-derived hard carbon has been studied separately as an anode, including in sodium-ion work, where ions do insert into the carbon. That is a different experiment, with different electrolytes and different ways to fail. It is not this guide, and it is not a weekend build either."
-							})]
-						})]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
-						id: "check",
-						kicker: "06 — Hold the distinctions",
-						title: "Four questions. No scoreboard beyond the page.",
-						lede: "They ask whether the precursor, the hydrothermal step, the device, and the surface area stayed separate in your head.",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ReadingCheck, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("footer", {
-						className: "border-t border-line",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-							className: "mx-auto max-w-6xl px-5 py-12 md:px-8",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "font-display text-2xl tracking-tight",
-									children: "Sources"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-									className: "mt-4 max-w-2xl space-y-3 text-sm leading-relaxed text-muted",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-										"Wang et al., “Interconnected carbon nanosheets derived from hemp for ultrafast supercapacitors with high energy,”",
-										" ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-											className: "text-fiber underline decoration-line underline-offset-4",
-											href: "https://doi.org/10.1021/nn400731g",
-											children: "ACS Nano 2013, 7, 5131–5141"
-										}),
-										". The temperatures, the nanosheet thickness, the surface area, the capacitance, and the device energy on this page come from that paper."
-									] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", { children: [
-										"ASME,",
-										" ",
-										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-											className: "text-fiber underline decoration-line underline-offset-4",
-											href: "https://www.asme.org/topics-resources/content/hemp-carbon-makes-supercapacitors-superfast",
-											children: "“Hemp Carbon Makes Supercapacitors Superfast”"
-										}),
-										", a popular account of the same work. The 49 kW/kg comparison is theirs, and it is labeled as such above."
-									] })]
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-									className: "mt-8 max-w-2xl text-sm leading-relaxed text-muted",
-									children: "Bast is an explanation. It is not instructions, not engineering advice, and not a claim that a cell built outside that lab will match these figures. Potassium hydroxide, pressurized hot water, and an 800°C furnace are how people get hurt."
-								})
-							]
-						})
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-6 max-w-2xl text-sm leading-relaxed text-muted",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "ASME also quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those two numbers are the magazine’s comparison. The paper’s own Ragone point used above is 20 kW/kg. Conductivity of the sheets is reported as about 211–226 S/m. [1] [3]" })
 					})
 				]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Section, {
+				id: "limits",
+				kicker: "05 — What it is not",
+				title: "Four claims that outran the sources.",
+				lede: "A supercapacitor, a proposed fiber mechanism, and a magazine line about graphene are three different sentences.",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
+					className: "grid gap-4",
+					children: myths.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+						className: "rounded-card border border-line bg-surface p-5",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "font-display text-xl tracking-tight",
+							children: item.claim
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-2 max-w-2xl leading-relaxed text-muted",
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: item.fact })
+						})]
+					}, item.claim))
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mt-6 rounded-card border border-kiln/50 bg-paper p-5",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "font-medium",
+						children: "If you need a cell you can use"
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-2 max-w-2xl text-sm leading-relaxed text-muted",
+						children: "Buy a certified one. This volume does not compare the 2013 device with a lithium-ion cell, and it does not add later battery papers the 2013 work does not contain."
+					})]
+				})]
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Section, {
+				id: "check",
+				kicker: "06 — Hold the distinctions",
+				title: "Four questions.",
+				lede: "Precursor, hydrothermal step, the device, and what the surface area is for.",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ReadingCheck, {})
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "border-t border-line",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "mx-auto max-w-6xl px-5 py-12 md:px-8",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SourcesList, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+						className: "mt-8 max-w-2xl text-sm leading-relaxed text-muted",
+						children: [
+							VOLUME_LINE,
+							", by ",
+							EDITION.author,
+							". An explanation, not instructions. Potassium hydroxide, pressurized hot water, and an 800°C furnace are how people get hurt. Do not mix electrolytes, and do not neutralize chemicals at home."
+						]
+					})]
+				})
 			})
 		]
-	});
-}
-function SiteHeader() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("header", {
-		className: "sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur-md",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-				href: "#content",
-				className: "flex items-baseline gap-2",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "font-display text-xl tracking-tight",
-					children: "Bast"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-					className: "hidden text-sm text-muted sm:inline",
-					children: "Field guide"
-				})]
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-				"aria-label": "Guide",
-				className: "flex min-w-0 gap-1 overflow-x-auto",
-				children: nav.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-					href: item.href,
-					className: "inline-flex min-h-11 items-center px-2.5 text-sm text-muted hover:text-ink sm:px-3",
-					children: item.label
-				}, item.href))
-			})]
-		})
 	});
 }
 function Hero() {
@@ -1138,15 +1061,19 @@ function Hero() {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "text-xs font-medium uppercase tracking-widest text-fiber",
-				children: "Hemp bast carbon · a rechargeable cell"
+				children: VOLUME_LINE
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 				className: "mt-4 max-w-4xl font-display text-5xl leading-[1.02] tracking-tight md:text-7xl",
 				children: "The charge lives in the stalk’s fiber."
 			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+				className: "mt-3 text-sm text-muted",
+				children: ["by ", EDITION.author]
+			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl",
-				children: "What people call a hemp battery is a laboratory supercapacitor. Its electrodes are carbon sheets, ten to thirty nanometers thick, split out of bast fiber. It recharges. It is not a lithium-ion cell, and it is not something you cook."
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "What people call a hemp battery is a laboratory supercapacitor from 2013. Its electrodes are carbon sheets, ten to thirty nanometers thick, made from hemp bast fiber. [1] An outside source can charge it again. Using it is discharge, which is not the same step." })
 			})
 		] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FiberMark, {})]
 	});
@@ -1197,76 +1124,52 @@ function Caution() {
 			className: "mx-auto max-w-6xl px-5 py-5 md:px-8",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "font-medium",
-				children: "Not a procedure. A reading of a lab paper."
+				children: "Not a procedure. Read Stay safe before the stations."
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-2 max-w-3xl text-sm leading-relaxed text-muted md:text-base",
-				children: "Reproducing it takes a hydrothermal autoclave, molten potassium hydroxide, and a furnace near 800°C. Those injure people. Drain cleaner, a pressure cooker, and a kiln are not stand-ins. If you want a rechargeable battery, buy one that was certified. Use this page to understand the one that was published."
+				children: "Do not mix electrolytes. Do not neutralize chemicals at home. The lab path uses a hydrothermal autoclave, potassium hydroxide, and a furnace near 800°C. Drain cleaner, a pressure cooker, and a kiln are not stand-ins. If you need a cell, buy one that was certified."
 			})]
 		})
 	});
 }
-function Devices() {
-	const [mode, setMode] = (0, import_react.useState)("capacitor");
-	const capacitor = mode === "capacitor";
+function ChargeAndUse() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "mx-auto max-w-6xl px-5 py-14 md:px-8 md:py-16",
-		"aria-labelledby": "devices-title",
+		"aria-labelledby": "charge-title",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "font-display text-sm italic text-fiber",
 				children: "Before the steps"
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				id: "devices-title",
+				id: "charge-title",
 				className: "mt-3 max-w-3xl font-display text-4xl tracking-tight md:text-5xl",
-				children: "Two devices share one plant, and almost nothing else."
+				children: "Charge, discharge, and recharge are three words."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mt-8 flex flex-wrap gap-2",
-				role: "group",
-				"aria-label": "Device type",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ModeButton, {
-					on: capacitor,
-					onClick: () => setMode("capacitor"),
-					children: "Supercapacitor"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ModeButton, {
-					on: !capacitor,
-					onClick: () => setMode("battery"),
-					children: "Battery"
-				})]
-			}),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "mt-4 rounded-card border border-line bg-surface p-5 md:p-8",
-				children: capacitor ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "text-xs font-medium uppercase tracking-wider text-kiln",
-					children: "This guide"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 max-w-2xl text-lg leading-relaxed",
-					children: "The 2013 device stores charge by parking ions on carbon. Both electrodes are the same hemp-derived sheets. The electrolyte in the headline results is an ionic liquid, so the cell still works from about freezing to 100°C. It is rechargeable in the plain sense: reverse the current, the ions go home."
-				})] }) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "text-xs font-medium uppercase tracking-wider text-kiln",
-					children: "A different literature"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-3 max-w-2xl text-lg leading-relaxed",
-					children: "A battery stores charge by moving ions into a host material. Researchers have since carbonized hemp into hard carbon and tested it as an anode, including for sodium-ion cells. That chemistry can hold more energy, and it can fail in the ways batteries fail — heat, flammable solvent, plating. It is not what Wang and Mitlin assembled, and this page will not walk through it."
-				})] })
+				className: "mt-8 grid gap-4 md:grid-cols-3",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+						title: "Charge",
+						body: "An outside power source forces the ions apart and stores energy in the cell."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+						title: "Discharge",
+						body: "The cell is in use. The ions flow back through the circuit, and energy comes out. That is discharge, not a recharge."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Fact, {
+						title: "Recharge",
+						body: "Only after discharge. You connect an outside source again and put the energy back. The ions returning during use are not that."
+					})
+				]
 			})
 		]
-	});
-}
-function ModeButton({ on, onClick, children }) {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-		type: "button",
-		"aria-pressed": on,
-		onClick,
-		className: "min-h-11 rounded-full px-5 text-sm font-medium " + (on ? "bg-fiber text-fiber-ink" : "border border-line bg-surface text-ink"),
-		children
 	});
 }
 function Section({ id, kicker, title, lede, children }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id,
-		className: "scroll-mt-20 border-t border-line py-14 md:py-20",
+		className: "scroll-mt-28 border-t border-line py-14 md:py-20",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "mx-auto max-w-6xl px-5 md:px-8",
 			children: [
@@ -1280,7 +1183,7 @@ function Section({ id, kicker, title, lede, children }) {
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "mt-4 max-w-2xl text-lg leading-relaxed text-muted",
-					children: lede
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: lede })
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "mt-10",
@@ -1298,7 +1201,7 @@ function Fact({ title, body }) {
 			children: title
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 			className: "mt-2 text-sm leading-relaxed text-muted",
-			children: body
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: body })
 		})]
 	});
 }

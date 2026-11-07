@@ -1,4 +1,5 @@
 import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Cited } from "@/components/cited";
 import { capacitance, energy } from "@/data/guide";
 
 export function PublishedFigures() {
@@ -7,15 +8,15 @@ export function PublishedFigures() {
       <ChartCard
         kicker="Specific capacitance at 100 A/g"
         title="Still high when the current is brutal"
-        note="Farads per gram of active carbon. The 0°C point is not on this chart: at a milder 10 A/g the electrode held 106 F/g. Mixing that point in would make the cold result look weaker than the test it was given."
+        note="Farads per gram. The abstract’s 0°C point is not on this chart: at 10 A/g the electrode held 106 F/g. These three bars are the 100 A/g points. [1] [2]"
         data={capacitance}
         dataKey="farads"
         unit="F/g"
       />
       <ChartCard
         kicker="Energy at 20 kW/kg"
-        title="Active mass, not the whole device"
-        note="Watt-hours per kilogram of active material, at 20, 60, and 100°C. The sealed device — both electrodes, electrolyte, separator — reached about 12 Wh/kg. Use 12, not these bars, if you are comparing with a commercial cell."
+        title="Active mass, as the abstract says"
+        note="The abstract gives 19, 34, and 40 Wh/kg at 20 kW/kg and says those power-energy figures are normalized to active mass. Separately, it reports 12 Wh/kg for the assembled device. It does not say what that device kilogram includes, so this guide does not either. [1] [2]"
         data={energy}
         dataKey="wh"
         unit="Wh/kg"
@@ -75,7 +76,9 @@ function ChartCard({
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-muted">{note}</p>
+      <p className="mt-3 text-sm leading-relaxed text-muted">
+        <Cited text={note} />
+      </p>
     </figure>
   );
 }

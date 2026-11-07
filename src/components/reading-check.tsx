@@ -1,4 +1,5 @@
 import { checks } from "@/data/guide";
+import { Cited } from "@/components/cited";
 import { useAnswers } from "@/lib/memory";
 
 export function ReadingCheck() {
@@ -47,7 +48,7 @@ export function ReadingCheck() {
               {picked ? (
                 <p className="mt-3 text-sm leading-relaxed text-muted" aria-live="polite">
                   {picked === item.answer ? "Yes. " : "Not that one. "}
-                  {item.why}
+                  <Cited text={item.why} />
                 </p>
               ) : null}
             </li>

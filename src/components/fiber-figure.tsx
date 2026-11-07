@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { layers, type LayerId } from "@/data/guide";
+import { Cited } from "@/components/cited";
 
 const paint: Record<LayerId, { ring: string; label: string }> = {
   s1: { ring: "text-ink", label: "S1" },
@@ -74,7 +75,9 @@ export function FiberFigure() {
 
         <div className="mt-5 rounded-card border border-line bg-surface p-5">
           <p className={"font-display text-sm italic " + paint[layer.id].ring}>{paint[layer.id].label}</p>
-          <p className="mt-2 text-lg leading-relaxed">{layer.body}</p>
+          <p className="mt-2 text-lg leading-relaxed">
+            <Cited text={layer.body} />
+          </p>
         </div>
 
         {active === "s2" ? (
@@ -87,7 +90,7 @@ export function FiberFigure() {
                 onClick={() => setSplit((value) => !value)}
                 className="min-h-11 rounded-full border border-fiber px-4 text-sm font-medium text-fiber"
               >
-                {split ? "Show the bound fibrils" : "Pry them into sheets"}
+                {split ? "Show the bound fibrils" : "Show the authors’ split"}
               </button>
             </div>
             <div className={"mt-5 flex flex-col " + (split ? "gap-3" : "gap-1")} aria-hidden="true">
@@ -96,9 +99,13 @@ export function FiberFigure() {
               ))}
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted">
-              {split
-                ? "Molten KOH at 700–800°C finishes the separation. Each bar stands for a sheet on the order of 10–30 nanometers thick, now full of pores."
-                : "Hydrothermal treatment only loosens the ties. The microfibrils are still a wall, not a stack of free sheets."}
+              <Cited
+                text={
+                  split
+                    ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets about 10–30 nm thick, full of pores. That picture is their explanation, not a settled fact. [1] [6]"
+                    : "Their account of the hydrothermal step is that it loosens S2. The microfibrils are still a wall. [6]"
+                }
+              />
             </p>
           </div>
         ) : null}

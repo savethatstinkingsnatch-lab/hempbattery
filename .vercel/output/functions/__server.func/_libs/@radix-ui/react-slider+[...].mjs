@@ -1,5 +1,5 @@
 import { i as __toESM } from "../../_runtime.mjs";
-import { a as require_jsx_runtime, i as useComposedRefs, o as require_react, r as createContextScope, t as createCollection } from "./react-collection+[...].mjs";
+import { a as require_react, i as useComposedRefs, o as require_jsx_runtime, r as createContextScope, t as createCollection } from "./react-collection+[...].mjs";
 import { t as clamp } from "../radix-ui__number.mjs";
 import { t as composeEventHandlers } from "../radix-ui__primitive.mjs";
 import { t as useDirection } from "../radix-ui__react-direction.mjs";

@@ -1,5 +1,5 @@
 import { i as __toESM, t as __commonJSMin } from "../../_runtime.mjs";
-import { a as require_jsx_runtime, n as createSlot, o as require_react } from "./react-collection+[...].mjs";
+import { a as require_react, n as createSlot, o as require_jsx_runtime } from "./react-collection+[...].mjs";
 //#region node_modules/react-dom/cjs/react-dom.production.js
 /**
 * @license React

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { stations } from "@/data/guide";
+import { Cited } from "@/components/cited";
 import { useSeen } from "@/lib/memory";
 
 export function Stations() {
@@ -68,7 +69,9 @@ function Note({ kicker, body }: { kicker: string; body: string }) {
   return (
     <div className="rounded-card border border-line bg-paper px-4 py-4">
       <p className="text-xs font-medium uppercase tracking-wider text-fiber">{kicker}</p>
-      <p className="mt-2 text-sm leading-relaxed">{body}</p>
+      <p className="mt-2 text-sm leading-relaxed">
+        <Cited text={body} />
+      </p>
     </div>
   );
 }

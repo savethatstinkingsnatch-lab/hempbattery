@@ -10,25 +10,25 @@ export const layers: {
     id: "s1",
     name: "S1, outer wall",
     range: "Comes off in the hydrothermal step",
-    body: "The thin outer layer of the bast fiber. At 180°C in water, under pressure, it does not survive as a sheet. It is not the carbon you keep.",
+    body: "The thin outer layer of the bast fiber. The authors’ account is that the 180°C hydrothermal step takes it off. That is their explanation of the micrographs, not a separate measurement. [6]",
   },
   {
     id: "s2",
     name: "S2, the useful wall",
     range: "Microfibrils about 10–30 nm across",
-    body: "The thick middle layer. It is built from cellulose microfibrils. Hydrothermal treatment loosens the ties between them. Molten potassium hydroxide then pries those fibrils apart into carbon nanosheets of roughly the same thickness.",
+    body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then pries the fibrils into sheets of about that thickness. “Pries apart” is their picture of the process, not a settled fact. [1] [6]",
   },
   {
     id: "s3",
     name: "S3, inner wall",
     range: "Also stripped hydrothermally",
-    body: "The thin layer facing the hollow core. Like S1, it is removed when hemicellulose and part of the lignin dissolve. What remains to be split is S2.",
+    body: "The thin layer facing the hollow core. In the authors’ account it leaves with S1 during the hydrothermal step, when much of the hemicellulose and part of the lignin dissolve. [6]",
   },
   {
     id: "lumen",
     name: "Lumen",
     range: "The hollow core",
-    body: "A bast fiber is a tube, about 10–30 micrometers across. The lumen is the empty middle. It is not a reservoir of charge. The charge, later, sits on the pore walls of the carbon made from S2.",
+    body: "A bast fiber is a hollow tube, about 10–30 micrometers across, in the authors’ description. [6] The lumen is that empty middle. It is not a reservoir of charge. In the supercapacitor, ions use the carbon surface, including the walls inside the pores. They are not stored in this hollow core, and the paper does not say they insert into the solid.",
   },
 ];
 
@@ -52,22 +52,23 @@ export const stations: Station[] = [
     summary: "The precursor is the long fiber in the stalk bark — not the flower, the seed, or the woody core.",
     hazard: "Dust. This is the only ordinary step.",
     changes:
-      "Industrial hemp is retted and the bast is pulled from the hurd. Bast has the layered, hollow-fiber architecture the rest of the process exploits. Hurd can be charred into ordinary carbon. It does not split into these nanosheets.",
+      "The 2013 work starts from bast, the long fiber in the stalk bark, pulled off the woody hurd. The authors’ explanation is that bast’s layered wall is what lets the later steps make nanosheets. The paper does not test hurd, so this guide does not claim hurd cannot make sheets. [1] [6]",
     conditions:
-      "The 2013 work starts from hemp bast fiber. Nothing in the paper depends on flowers, resin, or oil.",
+      "Hemp bast fiber is the precursor they report. Flowers, resin, and oil are not part of that experiment. [1]",
     equipment: "A fiber mill, or hand separation of retted stalk. No chemistry yet.",
     notHome:
-      "Growing hemp is agriculture, and legality depends on where you are. Growing it does not produce a cell. It produces a precursor for a furnace.",
+      "Under 7 U.S.C. § 1639o, hemp is Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [4] [5]",
   },
   {
     id: "hydro",
     n: "02",
     title: "Loosen the wall in hot water",
-    summary: "A sealed vessel holds the fiber at 180°C for 24 hours. The yarn breaks into small pieces of hydrochar.",
+    summary: "A sealed vessel holds the fiber in hot water. ASME reports 180°C for 24 hours. The paper’s own account of the step is the chemistry, not a timer you should copy.",
     hazard: "Pressurized hot liquid. A failed seal is a steam explosion.",
     changes:
-      "Most of the hemicellulose, and part of the lignin, dissolve. Crystalline cellulose is only partly carbonized. S1 and S3 come away. In S2, the connections between microfibrils loosen, which is the entire point of this step.",
-    conditions: "Hydrothermal carbonization at 180°C for 24 hours, as reported for this precursor.",
+      "The authors write that most of the hemicellulose, and part of the lignin, dissolve, that crystalline cellulose is only partly carbonized, and that S1 and S3 come away while S2 loosens. That is their proposed account of why sheets can form later. [6]",
+    conditions:
+      "The paper describes hydrothermal carbonization at 180°C. The 24-hour hold is in the ASME account of the same work, not a line this guide found in the abstract. [1] [3] [6]",
     equipment:
       "A hydrothermal autoclave rated for the vapor pressure of water at that temperature, with a chemically compatible liner, in a lab that can vent and contain a failure.",
     notHome:
@@ -77,11 +78,11 @@ export const stations: Station[] = [
     id: "activate",
     n: "03",
     title: "Split the fibrils with potassium hydroxide",
-    summary: "The hydrochar is heated with KOH to 700–800°C. Layers separate into sheets 10–30 nm thick.",
+    summary: "The hydrochar is heated with potassium hydroxide. The paper discusses 700–800°C. ASME says the heat reached as high as 800°C.",
     hazard: "Molten caustic at furnace temperature. Severe burns even before it is hot.",
     changes:
-      "The KOH melt wicks into the loosened gaps and peels S2 into interconnected, partly graphitic nanosheets. It also etches micropores and mesopores. Reported peaks: surface area up to 2,287 m² per gram, mesoporosity up to 58 percent, conductivity about 211–226 S/m. The samples are named by activation temperature — CNS-700, CNS-800, and so on.",
-    conditions: "Potassium hydroxide activation between 700°C and 800°C.",
+      "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements, rather than that proposal, are a surface area up to 2,287 m²/g, mesoporosity up to 58 percent, conductivity about 211–226 S/m, and sheets about 10–30 nm thick. The sheets are partially graphitic carbon. Samples are named by activation temperature. [1]",
+    conditions: "Potassium hydroxide activation. The paper’s range is 700–800°C. [6] ASME’s ceiling is 800°C. [3] Neither source is a recipe with amounts.",
     equipment:
       "A furnace that can hold that temperature, an inert or controlled atmosphere, a boat that KOH will not destroy, and a fume hood. KOH attacks skin, eyes, aluminum, and glass.",
     notHome:
@@ -91,14 +92,14 @@ export const stations: Station[] = [
     id: "wash",
     n: "04",
     title: "Wash the alkali out",
-    summary: "Residual KOH has to leave the carbon, or the electrode and the electrolyte are both ruined.",
-    hazard: "Caustic wastewater. It is chemical waste, not sink water.",
+    summary: "Residual alkali has to leave the carbon before it is an electrode. This page does not say how.",
+    hazard: "Caustic waste. Do not neutralize it at home.",
     changes:
-      "Washing neutralizes and removes leftover potassium salts so the pores stay open and the surface is carbon, not caustic. Drying leaves a fine black powder of nanosheets. That powder is the active material.",
-    conditions: "A laboratory wash to neutral, then drying. The paper’s performance figures are for cleaned carbon.",
-    equipment: "Filtration, plenty of rinse water, pH checks, and a waste container rated for alkali.",
+      "This station is here so the alkali is not forgotten. The figures belong to carbons a laboratory had already finished with. This page does not describe a wash, an acid, or a way to treat leftover potassium hydroxide.",
+    conditions: "A laboratory wash, then drying. This guide does not give volumes, acids, or a neutralization method.",
+    equipment: "Whatever that lab used to filter and collect alkali waste. Not a kitchen sink.",
     notHome:
-      "Pouring this wash down a drain dumps caustic into plumbing and the watershed. The powder is also a fine dust you do not want in your lungs.",
+      "Do not neutralize chemicals at home. Do not mix a homemade wash, an acid into a base, or a base into a drain. Caustic wastewater is laboratory waste. The powder is also a dust you do not want in your lungs.",
   },
   {
     id: "electrode",
@@ -107,46 +108,46 @@ export const stations: Station[] = [
     summary: "Sheets only store charge if they are bound to a current collector, with a path for electrons.",
     hazard: "Solvents and powders, handled in a hood.",
     changes:
-      "The carbon is blended with a conductive additive and a binder, spread as a film on a metal current collector, dried, and pressed. Two films, matched in mass, become the two electrodes. This page does not give a slurry recipe. A guessed ratio will not reproduce the paper, and it is not the dangerous-looking step — the furnace was.",
+      "The abstract reports capacitance for the electrode and, separately, energy for an assembled device. [1] [2] It does not give a slurry, a binder ratio, or a current-collector recipe, and neither does this page. A guessed film will not reproduce the paper.",
     conditions:
       "Standard electrode fabrication. The published capacitance is per gram of this active carbon, measured on a potentiostat, not on a multimeter at the kitchen table.",
     equipment: "A coater or a lab draw-down, a vacuum oven, a calender or press, a balance.",
     notHome:
-      "Smearing charcoal onto foil does not make these nanosheets, and it does not make a stable rechargeable cell. Solvents used in electrode slurries are often flammable and toxic.",
+      "Smearing charcoal onto foil does not make these nanosheets. This page gives no slurry recipe. Solvents used for electrode films are often flammable.",
   },
   {
     id: "cell",
     n: "06",
     title: "Assemble a two-electrode test cell",
-    summary: "Two carbon electrodes, a separator, and an ionic liquid. That stack is the rechargeable device.",
-    hazard: "A sealed energy-storage cell. Short it, and the energy leaves as heat.",
+    summary: "Two carbon electrodes, a separator, and an ionic liquid. Charging it takes an outside source. Using it is discharge.",
+    hazard: "A sealed cell, and an electrolyte you do not mix.",
     changes:
-      "Ions from the electrolyte move to opposite electrodes when you charge the cell, and move back when you discharge it. Nothing is burned. In this device the ions sit on the carbon surface — an electric double layer — rather than inserting into a crystal the way lithium does in a lithium-ion battery. The paper’s full device stored up to about 12 Wh per kilogram.",
+      "When an outside source charges the cell, ions move to opposite electrodes and energy goes in. When the cell is used, those ions flow back and energy comes out. That return is discharge, not a recharge. Recharging means connecting a source again. The ions use the carbon surface, including the walls inside the pores. They are not plated as a metal, and the paper does not say they insert into the solid. The abstract reports about 12 Wh/kg for the assembled device and does not itemize that kilogram. [1] [2]",
     conditions:
-      "Ionic-liquid electrolyte. The headline results span roughly 0°C to 100°C. That temperature window is a property of the electrolyte and the carbon, not an invitation to heat a homemade cell.",
+      "Ionic-liquid electrolyte. The headline results span about 0°C to 100°C. That is a reported test window, not an invitation to heat a homemade cell. [1]",
     equipment:
-      "A separator, ionic liquid handled dry, a coin-cell or pouch crimp inside a dry environment, and a potentiostat to charge and measure it.",
+      "A separator, ionic liquid handled dry, a test-cell stack, and a potentiostat. No amounts are given here.",
     notHome:
-      "Do not invent an electrolyte. Water with table salt is a different, low-voltage experiment, and sealing it between random metals makes hydrogen, corrosion, and a mess — not this device. Buy a commercial cell if you need a rechargeable battery. Study this one in a lab.",
+      "Do not mix electrolytes. Do not combine liquids, salts, or solvents to imitate an ionic liquid. Water with table salt is a different experiment, and this page will not turn it into one. If you need a cell, buy one that was certified.",
   },
 ];
 
 export const myths: { claim: string; fact: string }[] = [
   {
     claim: "Hemp beats graphene, so it replaces a lithium battery.",
-    fact: "The 2013 carbons matched graphene electrodes of that era on a supercapacitor Ragone plot. They are partly graphitic nanosheets, not graphene, and the full device stored about 12 Wh/kg. A modern lithium-ion cell is often 150–250 Wh/kg. Different job.",
+    fact: "The paper reports strong power-energy numbers for a supercapacitor, on an active-mass basis, and about 12 Wh/kg for the assembled device. The sheets are partially graphitic carbon. [1] ASME wrote that the material outperforms graphene. That sentence is the magazine’s, and this guide does not adopt it. [3]",
   },
   {
     claim: "You can grow a battery.",
-    fact: "You can grow a precursor, where that crop is legal. The cell is a product of a pressure vessel and an 800°C furnace. The plant does not arrive charged.",
+    fact: "You can grow a legal precursor only if the crop is hemp under the statute and you are licensed to produce it. [4] [5] The cell is still the pressure vessel and furnace in the ASME account of this lab. [3] The plant does not arrive charged.",
   },
   {
     claim: "It is a lithium battery made of hemp.",
-    fact: "The device in the paper contains no lithium. Two hemp-carbon electrodes, a separator, an ionic liquid. Rechargeable, yes. A lithium-ion cell, no.",
+    fact: "The device in the paper is an ionic-liquid supercapacitor made with the hemp-bast carbon. [1] The abstract does not describe a lithium-ion cell, and this guide will not compare the two on weight. An outside source can charge the supercapacitor again. That is what “rechargeable” means here.",
   },
   {
     claim: "Any part of the plant works the same.",
-    fact: "The sheet morphology comes from the bast fiber’s layered wall. Flower, leaf, and hurd do not follow the same path, even if they can be burned into some other carbon.",
+    fact: "The 2013 route starts from bast. The authors propose that the layered wall is why sheets form. They do not test hurd, flower, or leaf, so this guide does not claim those tissues cannot make some other carbon. [1] [6]",
   },
 ];
 
@@ -169,7 +170,7 @@ export const checks: CheckQ[] = [
       { id: "oil", label: "The seed oil" },
     ],
     answer: "bast",
-    why: "The hollow, layered bast fiber is what splits into nanosheets. The flower is irrelevant to the chemistry.",
+    why: "Bast is the precursor the paper reports. The flower and the oil are not. The paper does not test hurd, so “hurd” is the wrong answer here without being a proof that hurd can never make carbon. [1] [6]",
   },
   {
     id: "hydro",
@@ -184,7 +185,7 @@ export const checks: CheckQ[] = [
       { id: "skip", label: "To avoid needing a furnace" },
     ],
     answer: "loosen",
-    why: "Hydrothermal treatment only partly carbonizes the cellulose. The furnace and the KOH still have to finish the job.",
+    why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours are from the ASME account. [3]",
   },
   {
     id: "device",
@@ -199,7 +200,7 @@ export const checks: CheckQ[] = [
       { id: "fuel", label: "A fuel cell that consumes the stalk" },
     ],
     answer: "edlc",
-    why: "Charge sits on the carbon surface in an electric double layer. It is rechargeable storage. It is not a lithium-ion battery.",
+    why: "An ionic-liquid supercapacitor. [1] Charging it means an outside source puts energy in. When the cell is used, ions flow back and energy comes out. That is discharge, not the recharge.",
   },
   {
     id: "area",
@@ -214,7 +215,7 @@ export const checks: CheckQ[] = [
       { id: "fuel", label: "The pores are filled with KOH, which is the fuel" },
     ],
     answer: "double",
-    why: "After washing, the KOH is gone. What remains is carbon area for the double layer. That is also why the cell can dump its energy quickly — the ions never have to push inside a crystal.",
+    why: "The double layer of this kind of cell forms on the carbon surface. That surface includes the walls inside the pores, which is why the abstract’s surface area, up to 2,287 m²/g, is the figure that matters. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores.",
   },
 ];
 

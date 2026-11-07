@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Cited } from "@/components/cited";
 import * as Slider from "@radix-ui/react-slider";
 
 const cations = [0, 1, 2, 3, 4, 5];
@@ -52,16 +53,16 @@ export function CellSim() {
       <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-muted">
         <span className="inline-flex items-center gap-2">
           <span className="size-3 rounded-full bg-fiber" aria-hidden="true" />
-          Cation, heads for the negative electrode
+          Cation. An outside source drives it toward the negative electrode while charging.
         </span>
         <span className="inline-flex items-center gap-2">
           <span className="size-3 rounded-full bg-kiln" aria-hidden="true" />
-          Anion, heads for the positive electrode
+          Anion. Charging drives it toward the positive electrode. In use, both flow back. That return is discharge.
         </span>
       </div>
 
       <p id="soc-label" className="mt-5 text-sm font-medium">
-        State of charge
+        State of charge. Raising it is charging, and that takes an outside source. Lowering it, in a real cell, is discharge.
       </p>
       <Slider.Root
         value={[soc]}
@@ -81,11 +82,15 @@ export function CellSim() {
       </Slider.Root>
 
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
-        {resting
-          ? "Discharged. Cations and anions are mixed in the electrolyte. The two carbon electrodes look the same, which is why this cell has no designated anode chemistry the way a lithium-ion cell does."
-          : charged
-            ? "Charged. Cations crowd the negative carbon, anions the positive. They are parked on the pore walls, not plated and not inserted into a host crystal. Reverse the current and they drift back. That is the recharge."
-            : "Charging separates the ions. Energy goes up because you have pushed positive and negative charges apart onto a very large carbon surface. The slider does not compute a pack size."}
+        <Cited
+          text={
+            resting
+              ? "Discharged. The ions are mixed. If the cell just did work, they flowed back and energy came out. That flow is discharge, not a recharge."
+              : charged
+                ? "Charged. An outside source has separated the ions onto the two carbons. They use the carbon surface, including the walls inside the pores. They are not plated as a metal. Using the cell lets them flow back, and that return is discharge. Recharging means connecting a source again to push them apart."
+                : "Partway between. Charging, from an outside source, separates the ions and puts energy in. Discharge, when the cell is used, lets the ions return and energy come out. The slider does not size a pack."
+          }
+        />
       </p>
     </div>
   );

@@ -1,9 +1,9 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { a as require_jsx_runtime, o as require_react } from "../_libs/@radix-ui/react-collection+[...].mjs";
+import { a as require_react, o as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
 import { _ as createFileRoute, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, v as createRootRoute, y as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DvUXCj83.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D6bJZUiw.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
@@ -331,8 +331,8 @@ function PreviewHostBridge() {
 	}, [router]);
 	return null;
 }
-var styles_default = "/assets/styles-D_rGhT7I.css";
-var Route$1 = createRootRoute({
+var styles_default = "/assets/styles-DRVC_HlJ.css";
+var Route$6 = createRootRoute({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -340,10 +340,10 @@ var Route$1 = createRootRoute({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: "Bast — the hemp cell, explained" },
+			{ title: "Bast — The Education Revolution, Volume 30" },
 			{
 				name: "description",
-				content: "A field guide to the rechargeable hemp-bast carbon cell: what the 2013 lab actually made, how the fiber becomes nanosheets, and why it is not a kitchen project."
+				content: "The Education Revolution Pocket Guide, Volume 30: Bast, by Blue and the Awesome Dudes. A reading of the 2013 hemp-bast supercapacitor, with the hazards left in view."
 			},
 			{
 				name: "theme-color",
@@ -381,13 +381,51 @@ var Route$1 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter = () => import("./routes-6ayh9n1P.mjs");
-var rootRouteChildren = { IndexRoute: createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter, "component") }).update({
-	id: "/",
-	path: "/",
-	getParentRoute: () => Route$1
-}) };
-var routeTree = Route$1._addFileChildren(rootRouteChildren)._addFileTypes();
+var $$splitComponentImporter$5 = () => import("./routes-aFWzLpgG.mjs");
+var Route$5 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
+var $$splitComponentImporter$4 = () => import("./disclaimer-Cwk6J1Bj.mjs");
+var Route$4 = createFileRoute("/disclaimer")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
+var $$splitComponentImporter$3 = () => import("./glossary-CZ7RM8eZ.mjs");
+var Route$3 = createFileRoute("/glossary")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
+var $$splitComponentImporter$2 = () => import("./privacy-BJmG0T3p.mjs");
+var Route$2 = createFileRoute("/privacy")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
+var $$splitComponentImporter$1 = () => import("./safe-CdaRZhEN.mjs");
+var Route$1 = createFileRoute("/safe")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
+var $$splitComponentImporter = () => import("./start-DpbVt8rQ.mjs");
+var Route = createFileRoute("/start")({ component: lazyRouteComponent($$splitComponentImporter, "component") });
+var rootRouteChildren = {
+	IndexRoute: Route$5.update({
+		id: "/",
+		path: "/",
+		getParentRoute: () => Route$6
+	}),
+	DisclaimerRoute: Route$4.update({
+		id: "/disclaimer",
+		path: "/disclaimer",
+		getParentRoute: () => Route$6
+	}),
+	GlossaryRoute: Route$3.update({
+		id: "/glossary",
+		path: "/glossary",
+		getParentRoute: () => Route$6
+	}),
+	PrivacyRoute: Route$2.update({
+		id: "/privacy",
+		path: "/privacy",
+		getParentRoute: () => Route$6
+	}),
+	SafeRoute: Route$1.update({
+		id: "/safe",
+		path: "/safe",
+		getParentRoute: () => Route$6
+	}),
+	StartRoute: Route.update({
+		id: "/start",
+		path: "/start",
+		getParentRoute: () => Route$6
+	})
+};
+var routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
 function getRouter() {
 	return createRouter({
 		routeTree,
