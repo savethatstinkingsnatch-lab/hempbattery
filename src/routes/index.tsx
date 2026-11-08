@@ -61,7 +61,7 @@ function Home() {
           />
           <Fact
             title="Discharge"
-            body="In use, the ions flow back through the circuit and energy comes out. That return is discharge, not a recharge."
+            body="In use, electrons move through the outside wires and energy comes out. The ions move within the electrolyte and the pores. That ion return is discharge, not a recharge."
           />
           <Fact
             title="Where they sit"
@@ -80,7 +80,7 @@ function Home() {
           <p className="font-display text-6xl tabular-nums tracking-tight text-fiber">12</p>
           <p className="mt-2 font-medium">Wh/kg, the assembled device</p>
           <p className="mt-2 text-sm leading-relaxed text-muted">
-            <Cited text="The abstract’s maximum for the assembled supercapacitor, higher than the commercial supercapacitors they compared it with. The abstract does not say which parts of the cell are inside that kilogram. This guide will not fill that in. [1] [2]" />
+            <Cited text="The abstract reports 12 Wh/kg as a maximum for the assembled supercapacitor device, and it does not itemize that kilogram. [1] [2] The inventors’ patent calls that same device figure an estimate, about 12 Wh/kg at 3 volts. It is not a household battery pack that was built and used. [8]" />
           </p>
         </div>
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">
@@ -194,7 +194,7 @@ function ChargeAndUse() {
         />
         <Fact
           title="Discharge"
-          body="The cell is in use. The ions flow back through the circuit, and energy comes out. That is discharge, not a recharge."
+          body="The cell is in use. Electrons flow through the external wires. Ions move within the electrolyte and the pores. That is discharge, not a recharge."
         />
         <Fact
           title="Recharge"

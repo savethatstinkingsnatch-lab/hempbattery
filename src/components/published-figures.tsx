@@ -16,7 +16,7 @@ export function PublishedFigures() {
       <ChartCard
         kicker="Energy at 20 kW/kg"
         title="Active mass, as the abstract says"
-        note="The abstract gives 19, 34, and 40 Wh/kg at 20 kW/kg and says those power-energy figures are normalized to active mass. Separately, it reports 12 Wh/kg for the assembled device. It does not say what that device kilogram includes, so this guide does not either. [1] [2]"
+        note="The abstract gives 19, 34, and 40 Wh/kg at 20 kW/kg and says those power-energy figures are normalized to active mass. Separately, it reports 12 Wh/kg for the assembled device and does not say what that kilogram includes. [1] [2] The inventors’ patent describes that device figure as an estimate, not a household pack. [8]"
         data={energy}
         dataKey="wh"
         unit="Wh/kg"

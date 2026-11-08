@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { EDITION, VOLUME_LINE } from "@/data/edition";
+import { DISPLAY_TITLE, EDITION, VOLUME_LINE } from "@/data/edition";
 
 const pages = [
   { href: "/start", label: "Start here" },
@@ -28,8 +28,8 @@ export function Shell({
       <header className="sticky top-0 z-20 border-b border-line bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 md:px-8">
           <a href="/" className="min-w-0">
-            <span className="block font-display text-xl leading-none tracking-tight">{EDITION.title}</span>
-            <span className="block truncate text-xs text-muted">{EDITION.volume}</span>
+            <span className="block font-display text-xl leading-none tracking-tight">{DISPLAY_TITLE}</span>
+            <span className="block truncate text-xs text-muted">{EDITION.seriesShort}</span>
           </a>
           <nav aria-label="Series pages" className="flex min-w-0 gap-1 overflow-x-auto">
             {pages.map((item) => (

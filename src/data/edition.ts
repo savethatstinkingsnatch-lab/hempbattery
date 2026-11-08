@@ -3,10 +3,14 @@ export const VOLUME = 30;
 
 export const EDITION = {
   series: "The Education Revolution Pocket Guide",
+  seriesShort: "The Education Revolution",
   volume: `Volume ${VOLUME}`,
-  title: "Bast",
+  title: "Hemp Batteries",
   author: "Blue and the Awesome Dudes",
   year: "2026",
 } as const;
 
-export const VOLUME_LINE = `${EDITION.series}, ${EDITION.volume}: ${EDITION.title}`;
+/** Visible name: header, browser title, and share card. */
+export const DISPLAY_TITLE = `${EDITION.volume}: ${EDITION.title}`;
+
+export const VOLUME_LINE = `${EDITION.series}, ${DISPLAY_TITLE}`;

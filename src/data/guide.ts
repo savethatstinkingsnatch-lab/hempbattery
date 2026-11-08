@@ -57,7 +57,7 @@ export const stations: Station[] = [
       "Hemp bast fiber is the precursor they report. Flowers, resin, and oil are not part of that experiment. [1]",
     equipment: "A fiber mill, or hand separation of retted stalk. No chemistry yet.",
     notHome:
-      "As of November 8, 2026, 7 U.S.C. § 1639o defines hemp as Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” [4] Public Law 119-37 rewrites that plant test as total THC, including THCA, still not more than 0.3 percent. The Code note dates the rewrite 365 days after November 12, 2025. [4] Congress later delayed the plant-threshold change to December 11, 2026. [7] Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [5]",
+      "As of November 8, 2026, 7 U.S.C. § 1639o defines hemp by delta-9 THC of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. [4] A rewrite of that plant definition, to total THC including THCA, is scheduled for December 11, 2026. [4] [7] That date is not when THCA testing begins. USDA production testing already requires a total THC result that counts THCA, because the acid can convert to delta-9 THC. [12] Growing still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [5]",
   },
   {
     id: "hydro",
@@ -100,7 +100,7 @@ export const stations: Station[] = [
     conditions: "A laboratory wash, then drying. This guide does not give volumes, acids, or a neutralization method.",
     equipment: "Whatever that lab used to filter and collect alkali waste. Not a kitchen sink.",
     notHome:
-      "Do not neutralize chemicals at home. Do not mix a homemade wash, an acid into a base, or a base into a drain. Caustic wastewater is laboratory waste. The powder is also a dust you do not want in your lungs.",
+      "Do not neutralize chemicals at home. Do not pour potassium hydroxide, acid, or wash water down a drain. Use an approved hazardous-waste program. [10] NIOSH lists potassium hydroxide as a corrosive that burns eyes, skin, and the airway, and says to prevent skin and eye contact. [9]",
   },
   {
     id: "electrode",
@@ -123,7 +123,7 @@ export const stations: Station[] = [
     summary: "Two carbon electrodes, a separator, and an ionic liquid. Charging it takes an outside source. Using it is discharge.",
     hazard: "A sealed cell, and an electrolyte you do not mix.",
     changes:
-      "When an outside source charges the cell, ions move to opposite electrodes and energy goes in. When the cell is used, those ions flow back and energy comes out. That return is discharge, not a recharge. Recharging means connecting a source again. The ions use the carbon surface, including the walls inside the pores. They are not plated as a metal, and the paper does not say they insert into the solid. The abstract reports about 12 Wh/kg for the assembled device and does not itemize that kilogram. [1] [2]",
+      "When an outside source charges the cell, ions move within the electrolyte toward opposite electrodes and energy goes in. Electrons move through the outside wires. When the cell is used, the ions move back through the electrolyte and the pores, and the electrons return through those wires. That ion return is discharge, not a recharge. Recharging means connecting a source again. The ions use the carbon surface, including the walls inside the pores. They are not plated as a metal, and the paper does not say they insert into the solid. The abstract reports about 12 Wh/kg for the assembled device and does not itemize that kilogram. [1] [2] The inventors’ patent calls that device figure an estimate. It is not a household battery pack. [8]",
     conditions:
       "Ionic-liquid electrolyte. The headline results span about 0°C to 100°C. That is a reported test window, not an invitation to heat a homemade cell. [1]",
     equipment:

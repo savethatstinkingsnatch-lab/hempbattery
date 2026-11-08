@@ -25,7 +25,8 @@ const terms: { term: string; meaning: string }[] = [
   },
   {
     term: "Discharge",
-    meaning: "The cell is in use. Ions flow back and energy comes out. This is not recharging.",
+    meaning:
+      "The cell is in use. Electrons flow through the outside wires. Ions move within the electrolyte and the pores. This is not recharging.",
   },
   {
     term: "Recharge",

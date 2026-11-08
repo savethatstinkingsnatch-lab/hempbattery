@@ -57,7 +57,7 @@ export function CellSim() {
         </span>
         <span className="inline-flex items-center gap-2">
           <span className="size-3 rounded-full bg-kiln" aria-hidden="true" />
-          Anion. Charging drives it toward the positive electrode. In use, both flow back. That return is discharge.
+          Anion. Charging drives it toward the positive electrode. In use, ions move back through the electrolyte. Electrons, not these ions, travel the outside wires. That ion return is discharge.
         </span>
       </div>
 
@@ -87,7 +87,7 @@ export function CellSim() {
             resting
               ? "Discharged. The ions are mixed. If the cell just did work, they flowed back and energy came out. That flow is discharge, not a recharge."
               : charged
-                ? "Charged. An outside source has separated the ions onto the two carbons. They use the carbon surface, including the walls inside the pores. They are not plated as a metal. Using the cell lets them flow back, and that return is discharge. Recharging means connecting a source again to push them apart."
+                ? "Charged. An outside source has separated the ions onto the two carbons. They use the carbon surface, including the walls inside the pores. They are not plated as a metal. Using the cell sends electrons through the outside wires. The ions move back through the electrolyte and the pores. That is discharge. Recharging means connecting a source again."
                 : "Partway between. Charging, from an outside source, separates the ions and puts energy in. Discharge, when the cell is used, lets the ions return and energy come out. The slider does not size a pack."
           }
         />
