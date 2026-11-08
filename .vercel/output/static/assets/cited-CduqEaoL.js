@@ -1,0 +1,1 @@
+import{t as e}from"./index-fjplbIYv.js";var t=e();function n({text:e}){let n=e.split(/(\[\d+\])/g);return(0,t.jsx)(t.Fragment,{children:n.map((e,n)=>{let r=/^\[(\d+)\]$/.exec(e);if(!r)return(0,t.jsx)(`span`,{children:e},n);let i=r[1];return(0,t.jsxs)(`a`,{href:`/#source-${i}`,className:`text-fiber`,children:[`[`,i,`]`]},n)})})}export{n as t};

@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-z4Pp3ZYc.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DC2mnmTw.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "/workspace/src/routes/__root.tsx",
@@ -10,59 +10,59 @@ var tsrStartManifest = () => ({ routes: {
 			"/safe",
 			"/start"
 		],
-		preloads: ["/assets/index-DUViJENA.js"],
+		preloads: ["/assets/index-fjplbIYv.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-DUViJENA.js"
+			src: "/assets/index-fjplbIYv.js"
 		} }]
 	},
 	"/": {
 		filePath: "/workspace/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-BNXMj4Mh.js",
-			"/assets/shell-B2E00mcz.js",
-			"/assets/sources-list-Dgpje7kn.js",
-			"/assets/cited-CdX31-Ig.js"
+			"/assets/routes-B-dJjKXu.js",
+			"/assets/shell-DMqPluZy.js",
+			"/assets/sources-list-nkQDJ_XZ.js",
+			"/assets/cited-CduqEaoL.js"
 		]
 	},
 	"/disclaimer": {
 		filePath: "/workspace/src/routes/disclaimer.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/disclaimer-g8qjYn63.js",
-			"/assets/shell-B2E00mcz.js",
-			"/assets/sources-list-Dgpje7kn.js"
+			"/assets/disclaimer-CvXgGaTQ.js",
+			"/assets/shell-DMqPluZy.js",
+			"/assets/sources-list-nkQDJ_XZ.js"
 		]
 	},
 	"/glossary": {
 		filePath: "/workspace/src/routes/glossary.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/glossary-Ak9YwNed.js",
-			"/assets/shell-B2E00mcz.js",
-			"/assets/cited-CdX31-Ig.js"
+			"/assets/glossary-DctNb1oD.js",
+			"/assets/shell-DMqPluZy.js",
+			"/assets/cited-CduqEaoL.js"
 		]
 	},
 	"/privacy": {
 		filePath: "/workspace/src/routes/privacy.tsx",
 		children: void 0,
-		preloads: ["/assets/privacy-DsEZVr6b.js", "/assets/shell-B2E00mcz.js"]
+		preloads: ["/assets/privacy-BANeC6wv.js", "/assets/shell-DMqPluZy.js"]
 	},
 	"/safe": {
 		filePath: "/workspace/src/routes/safe.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/safe-CRra3kQL.js",
-			"/assets/shell-B2E00mcz.js",
-			"/assets/cited-CdX31-Ig.js"
+			"/assets/safe-x1aPdtkh.js",
+			"/assets/shell-DMqPluZy.js",
+			"/assets/cited-CduqEaoL.js"
 		]
 	},
 	"/start": {
 		filePath: "/workspace/src/routes/start.tsx",
 		children: void 0,
-		preloads: ["/assets/start-D-a8P2sP.js", "/assets/shell-B2E00mcz.js"]
+		preloads: ["/assets/start-D8RPTiT-.js", "/assets/shell-DMqPluZy.js"]
 	}
 } });
 //#endregion

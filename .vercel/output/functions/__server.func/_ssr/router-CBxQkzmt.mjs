@@ -3,7 +3,7 @@ import { a as require_react, o as require_jsx_runtime } from "../_libs/@radix-ui
 import { _ as createFileRoute, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, v as createRootRoute, y as useRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as TriangleAlert } from "../_libs/lucide-react.mjs";
 import { a as union, i as string, n as number, r as object, t as literal } from "../_libs/zod.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D6bJZUiw.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CBxQkzmt.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FALLBACK_MESSAGE = "An unexpected error occurred. Try reloading the page.";
@@ -381,15 +381,15 @@ var Route$6 = createRootRoute({
 		] })]
 	})
 });
-var $$splitComponentImporter$5 = () => import("./routes-aFWzLpgG.mjs");
+var $$splitComponentImporter$5 = () => import("./routes-Bezas91g.mjs");
 var Route$5 = createFileRoute("/")({ component: lazyRouteComponent($$splitComponentImporter$5, "component") });
-var $$splitComponentImporter$4 = () => import("./disclaimer-Cwk6J1Bj.mjs");
+var $$splitComponentImporter$4 = () => import("./disclaimer-BYklJprV.mjs");
 var Route$4 = createFileRoute("/disclaimer")({ component: lazyRouteComponent($$splitComponentImporter$4, "component") });
-var $$splitComponentImporter$3 = () => import("./glossary-CZ7RM8eZ.mjs");
+var $$splitComponentImporter$3 = () => import("./glossary-BCV6rqYh.mjs");
 var Route$3 = createFileRoute("/glossary")({ component: lazyRouteComponent($$splitComponentImporter$3, "component") });
 var $$splitComponentImporter$2 = () => import("./privacy-BJmG0T3p.mjs");
 var Route$2 = createFileRoute("/privacy")({ component: lazyRouteComponent($$splitComponentImporter$2, "component") });
-var $$splitComponentImporter$1 = () => import("./safe-CdaRZhEN.mjs");
+var $$splitComponentImporter$1 = () => import("./safe-aVtWR-qO.mjs");
 var Route$1 = createFileRoute("/safe")({ component: lazyRouteComponent($$splitComponentImporter$1, "component") });
 var $$splitComponentImporter = () => import("./start-DpbVt8rQ.mjs");
 var Route = createFileRoute("/start")({ component: lazyRouteComponent($$splitComponentImporter, "component") });

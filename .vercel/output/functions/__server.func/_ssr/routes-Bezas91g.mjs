@@ -1,11 +1,11 @@
 import { i as __toESM } from "../_runtime.mjs";
 import { a as require_react, o as require_jsx_runtime } from "../_libs/@radix-ui/react-collection+[...].mjs";
 import { i as VOLUME_LINE, r as Shell, t as EDITION } from "./shell-kjoUljAS.mjs";
-import { t as SourcesList } from "./sources-list-C4n-y1oX.mjs";
+import { t as SourcesList } from "./sources-list-DIdRFXWA.mjs";
 import { t as Cited } from "./cited-COH1AeM_.mjs";
 import { i as SliderTrack, n as SliderRange, r as SliderThumb, t as Slider } from "../_libs/@radix-ui/react-slider+[...].mjs";
 import { a as Bar, i as CartesianGrid, n as YAxis, o as ResponsiveContainer, r as XAxis, s as Tooltip, t as BarChart } from "../_libs/recharts+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-aFWzLpgG.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Bezas91g.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var cations = [
@@ -156,7 +156,7 @@ var layers = [
 		id: "s2",
 		name: "S2, the useful wall",
 		range: "Microfibrils about 10–30 nm across",
-		body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then pries the fibrils into sheets of about that thickness. “Pries apart” is their picture of the process, not a settled fact. [1] [6]"
+		body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then separates the fibrils into sheets. “Pries apart” is their picture of the process, not a settled fact. The measured sheets that are 10–30 nm thick are the 800°C sample, not every activation temperature. [1] [6]"
 	},
 	{
 		id: "s3",
@@ -181,17 +181,17 @@ var stations = [
 		changes: "The 2013 work starts from bast, the long fiber in the stalk bark, pulled off the woody hurd. The authors’ explanation is that bast’s layered wall is what lets the later steps make nanosheets. The paper does not test hurd, so this guide does not claim hurd cannot make sheets. [1] [6]",
 		conditions: "Hemp bast fiber is the precursor they report. Flowers, resin, and oil are not part of that experiment. [1]",
 		equipment: "A fiber mill, or hand separation of retted stalk. No chemistry yet.",
-		notHome: "Under 7 U.S.C. § 1639o, hemp is Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [4] [5]"
+		notHome: "As of November 8, 2026, 7 U.S.C. § 1639o defines hemp as Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” [4] Public Law 119-37 rewrites that plant test as total THC, including THCA, still not more than 0.3 percent. The Code note dates the rewrite 365 days after November 12, 2025. [4] Congress later delayed the plant-threshold change to December 11, 2026. [7] Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [5]"
 	},
 	{
 		id: "hydro",
 		n: "02",
-		title: "Loosen the wall in hot water",
-		summary: "A sealed vessel holds the fiber in hot water. ASME reports 180°C for 24 hours. The paper’s own account of the step is the chemistry, not a timer you should copy.",
-		hazard: "Pressurized hot liquid. A failed seal is a steam explosion.",
+		title: "Loosen the wall in acidified water",
+		summary: "The methods hold the fiber in diluted sulfuric acid, inside a sealed stainless steel autoclave. This page names that fact. It does not give the procedure.",
+		hazard: "Hot diluted acid under pressure. A failed seal is a chemical burn and a steam blast.",
 		changes: "The authors write that most of the hemicellulose, and part of the lignin, dissolve, that crystalline cellulose is only partly carbonized, and that S1 and S3 come away while S2 loosens. That is their proposed account of why sheets can form later. [6]",
-		conditions: "The paper describes hydrothermal carbonization at 180°C. The 24-hour hold is in the ASME account of the same work, not a line this guide found in the abstract. [1] [3] [6]",
-		equipment: "A hydrothermal autoclave rated for the vapor pressure of water at that temperature, with a chemically compatible liner, in a lab that can vent and contain a failure.",
+		conditions: "The paper’s methods use diluted sulfuric acid in a sealed stainless steel autoclave at 180°C for 24 hours. [1] ASME’s shorter account says the fiber was pressure-cooked at 180°C for 24 hours and does not mention the acid. [3] Neither line is a recipe.",
+		equipment: "A sealed stainless steel autoclave, for acid under pressure, in a lab that can vent and contain a failure. This page does not give the acid strength.",
 		notHome: "A kitchen pressure cooker is the wrong vessel. It is not rated for this, it is not meant to hold plant slurry against a failed gasket, and it will contaminate anything you eat from afterwards. There is no safe substitute."
 	},
 	{
@@ -200,7 +200,7 @@ var stations = [
 		title: "Split the fibrils with potassium hydroxide",
 		summary: "The hydrochar is heated with potassium hydroxide. The paper discusses 700–800°C. ASME says the heat reached as high as 800°C.",
 		hazard: "Molten caustic at furnace temperature. Severe burns even before it is hot.",
-		changes: "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements, rather than that proposal, are a surface area up to 2,287 m²/g, mesoporosity up to 58 percent, conductivity about 211–226 S/m, and sheets about 10–30 nm thick. The sheets are partially graphitic carbon. Samples are named by activation temperature. [1]",
+		changes: "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements are not one sample. A surface area of 2,287 m²/g is CNS-750. The 10–30 nm sheets are CNS-800, which also has the highest mesopore volume in the series, about 58 percent of pore volume. Conductivity across the series is about 211–226 S/m. The sheets are partially graphitic carbon. The abstract lists those peaks together. [1]",
 		conditions: "Potassium hydroxide activation. The paper’s range is 700–800°C. [6] ASME’s ceiling is 800°C. [3] Neither source is a recipe with amounts.",
 		equipment: "A furnace that can hold that temperature, an inert or controlled atmosphere, a boat that KOH will not destroy, and a fume hood. KOH attacks skin, eyes, aluminum, and glass.",
 		notHome: "Do not substitute drain cleaner. Do not use a pottery kiln, a grill, or an oven. The melt is caustic, the off-gas is not something to breathe, and a household scale-up is how people lose eyes and start fires. This step has no domestic version."
@@ -211,7 +211,7 @@ var stations = [
 		title: "Wash the alkali out",
 		summary: "Residual alkali has to leave the carbon before it is an electrode. This page does not say how.",
 		hazard: "Caustic waste. Do not neutralize it at home.",
-		changes: "This station is here so the alkali is not forgotten. The figures belong to carbons a laboratory had already finished with. This page does not describe a wash, an acid, or a way to treat leftover potassium hydroxide.",
+		changes: "The paper reports that after activation the carbons were washed with hydrochloric acid and distilled water. [1] This page does not describe that wash, the strength, or what to do with the waste. These stations are a research summary, not the full method.",
 		conditions: "A laboratory wash, then drying. This guide does not give volumes, acids, or a neutralization method.",
 		equipment: "Whatever that lab used to filter and collect alkali waste. Not a kitchen sink.",
 		notHome: "Do not neutralize chemicals at home. Do not mix a homemade wash, an acid into a base, or a base into a drain. Caustic wastewater is laboratory waste. The powder is also a dust you do not want in your lungs."
@@ -304,7 +304,7 @@ var checks = [
 			}
 		],
 		answer: "loosen",
-		why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours are from the ASME account. [3]"
+		why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours, and the diluted sulfuric acid in a sealed autoclave, are in the paper’s methods. [1] ASME repeats the time and does not name the acid. [3]"
 	},
 	{
 		id: "device",
@@ -340,7 +340,7 @@ var checks = [
 			},
 			{
 				id: "double",
-				label: "Ions park on the carbon surface, so more wall means more charge"
+				label: "More accessible carbon surface can support more charge stored in the electric double layer"
 			},
 			{
 				id: "mass",
@@ -352,7 +352,7 @@ var checks = [
 			}
 		],
 		answer: "double",
-		why: "The double layer of this kind of cell forms on the carbon surface. That surface includes the walls inside the pores, which is why the abstract’s surface area, up to 2,287 m²/g, is the figure that matters. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores."
+		why: "Charge in this cell sits in the electric double layer, on carbon surface the ions can reach, including pore walls. More of that accessible surface can support more stored charge. It is not automatic. The 2,287 m²/g figure is the CNS-750 sample, not every carbon in the paper. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores."
 	}
 ];
 var capacitance = [
@@ -538,7 +538,7 @@ function FiberFigure() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-4 text-sm leading-relaxed text-muted",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: split ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets about 10–30 nm thick, full of pores. That picture is their explanation, not a settled fact. [1] [6]" : "Their account of the hydrothermal step is that it loosens S2. The microfibrils are still a wall. [6]" })
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: split ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets. The measured 10–30 nm thickness is the 800°C sample, CNS-800, not every sample. That picture of how the sheets form is their explanation, not a settled fact. [1] [6]" : "Their account of the hydrothermal step is that it loosens S2. The microfibrils are still a wall. [6]" })
 					})
 				]
 			}) : null
@@ -998,7 +998,11 @@ function Home() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "mt-6 max-w-2xl text-sm leading-relaxed text-muted",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "ASME also quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those two numbers are the magazine’s comparison. The paper’s own Ragone point used above is 20 kW/kg. Conductivity of the sheets is reported as about 211–226 S/m. [1] [3]" })
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "Those peaks are not one carbon. A surface area of 2,287 m²/g is the CNS-750 sample. The 10–30 nm sheets are CNS-800, which also has the highest mesopore volume in the series, about 58 percent of pore volume. Sheets made at 700°C and 750°C were thicker. Conductivity across the series is about 211–226 S/m. [1]" })
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "mt-4 max-w-2xl text-sm leading-relaxed text-muted",
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "ASME also quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those two numbers are the magazine’s comparison. The paper’s own Ragone point used above is 20 kW/kg. [3]" })
 					})
 				]
 			}),
@@ -1047,7 +1051,7 @@ function Home() {
 							VOLUME_LINE,
 							", by ",
 							EDITION.author,
-							". An explanation, not instructions. Potassium hydroxide, pressurized hot water, and an 800°C furnace are how people get hurt. Do not mix electrolytes, and do not neutralize chemicals at home."
+							". An explanation, not instructions, and not the full method. Hot acid under pressure, potassium hydroxide, and an 800°C furnace are how people get hurt. Do not mix electrolytes, and do not neutralize chemicals at home."
 						]
 					})]
 				})
@@ -1065,7 +1069,7 @@ function Hero() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 				className: "mt-4 max-w-4xl font-display text-5xl leading-[1.02] tracking-tight md:text-7xl",
-				children: "The charge lives in the stalk’s fiber."
+				children: "The electrode material starts in hemp bast fiber."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 				className: "mt-3 text-sm text-muted",
@@ -1073,7 +1077,7 @@ function Hero() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "What people call a hemp battery is a laboratory supercapacitor from 2013. Its electrodes are carbon sheets, ten to thirty nanometers thick, made from hemp bast fiber. [1] An outside source can charge it again. Using it is discharge, which is not the same step." })
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Cited, { text: "What people call a hemp battery is a laboratory supercapacitor from 2013. The electrode material is carbon made from hemp bast fiber. [1] An outside source charges the finished cell. Using it is discharge, which is not the same step." })
 			})
 		] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FiberMark, {})]
 	});
@@ -1127,7 +1131,7 @@ function Caution() {
 				children: "Not a procedure. Read Stay safe before the stations."
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-2 max-w-3xl text-sm leading-relaxed text-muted md:text-base",
-				children: "Do not mix electrolytes. Do not neutralize chemicals at home. The lab path uses a hydrothermal autoclave, potassium hydroxide, and a furnace near 800°C. Drain cleaner, a pressure cooker, and a kiln are not stand-ins. If you need a cell, buy one that was certified."
+				children: "Do not mix electrolytes. Do not neutralize chemicals at home. The lab path uses diluted sulfuric acid in a sealed autoclave, then potassium hydroxide, and a furnace near 800°C. Drain cleaner, a pressure cooker, and a kiln are not stand-ins. If you need a cell, buy one that was certified."
 			})]
 		})
 	});
