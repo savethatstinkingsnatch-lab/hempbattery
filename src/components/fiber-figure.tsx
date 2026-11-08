@@ -102,7 +102,7 @@ export function FiberFigure() {
               <Cited
                 text={
                   split
-                    ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets about 10–30 nm thick, full of pores. That picture is their explanation, not a settled fact. [1] [6]"
+                    ? "The authors propose that molten KOH at 700–800°C separates loosened S2 into sheets. The measured 10–30 nm thickness is the 800°C sample, CNS-800, not every sample. That picture of how the sheets form is their explanation, not a settled fact. [1] [6]"
                     : "Their account of the hydrothermal step is that it loosens S2. The microfibrils are still a wall. [6]"
                 }
               />

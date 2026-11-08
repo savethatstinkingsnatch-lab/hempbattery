@@ -84,7 +84,10 @@ function Home() {
           </p>
         </div>
         <p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted">
-          <Cited text="ASME also quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those two numbers are the magazine’s comparison. The paper’s own Ragone point used above is 20 kW/kg. Conductivity of the sheets is reported as about 211–226 S/m. [1] [3]" />
+          <Cited text="Those peaks are not one carbon. A surface area of 2,287 m²/g is the CNS-750 sample. The 10–30 nm sheets are CNS-800, which also has the highest mesopore volume in the series, about 58 percent of pore volume. Sheets made at 700°C and 750°C were thicker. Conductivity across the series is about 211–226 S/m. [1]" />
+        </p>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+          <Cited text="ASME also quotes about 49 kW/kg against about 17 kW/kg for commercial electrodes. Those two numbers are the magazine’s comparison. The paper’s own Ragone point used above is 20 kW/kg. [3]" />
         </p>
       </Section>
       <Section
@@ -123,9 +126,9 @@ function Home() {
         <div className="mx-auto max-w-6xl px-5 py-12 md:px-8">
           <SourcesList />
           <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted">
-            {VOLUME_LINE}, by {EDITION.author}. An explanation, not instructions. Potassium hydroxide, pressurized
-            hot water, and an 800°C furnace are how people get hurt. Do not mix electrolytes, and do not neutralize
-            chemicals at home.
+            {VOLUME_LINE}, by {EDITION.author}. An explanation, not instructions, and not the full method. Hot
+            acid under pressure, potassium hydroxide, and an 800°C furnace are how people get hurt. Do not mix
+            electrolytes, and do not neutralize chemicals at home.
           </p>
         </div>
       </div>
@@ -139,11 +142,11 @@ function Hero() {
       <div>
         <p className="text-xs font-medium uppercase tracking-widest text-fiber">{VOLUME_LINE}</p>
         <h1 className="mt-4 max-w-4xl font-display text-5xl leading-[1.02] tracking-tight md:text-7xl">
-          The charge lives in the stalk’s fiber.
+          The electrode material starts in hemp bast fiber.
         </h1>
         <p className="mt-3 text-sm text-muted">by {EDITION.author}</p>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
-          <Cited text="What people call a hemp battery is a laboratory supercapacitor from 2013. Its electrodes are carbon sheets, ten to thirty nanometers thick, made from hemp bast fiber. [1] An outside source can charge it again. Using it is discharge, which is not the same step." />
+          <Cited text="What people call a hemp battery is a laboratory supercapacitor from 2013. The electrode material is carbon made from hemp bast fiber. [1] An outside source charges the finished cell. Using it is discharge, which is not the same step." />
         </p>
       </div>
       <FiberMark />
@@ -168,9 +171,9 @@ function Caution() {
       <div className="mx-auto max-w-6xl px-5 py-5 md:px-8">
         <p className="font-medium">Not a procedure. Read Stay safe before the stations.</p>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted md:text-base">
-          Do not mix electrolytes. Do not neutralize chemicals at home. The lab path uses a hydrothermal
-          autoclave, potassium hydroxide, and a furnace near 800°C. Drain cleaner, a pressure cooker, and a kiln
-          are not stand-ins. If you need a cell, buy one that was certified.
+          Do not mix electrolytes. Do not neutralize chemicals at home. The lab path uses diluted sulfuric
+          acid in a sealed autoclave, then potassium hydroxide, and a furnace near 800°C. Drain cleaner, a
+          pressure cooker, and a kiln are not stand-ins. If you need a cell, buy one that was certified.
         </p>
       </div>
     </aside>

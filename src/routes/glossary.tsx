@@ -42,7 +42,7 @@ const terms: { term: string; meaning: string }[] = [
   {
     term: "Hydrothermal carbonization",
     meaning:
-      "Hot water in a sealed lab vessel. The paper discusses 180°C. [6] ASME adds a 24-hour hold for this work. [3]",
+      "Diluted sulfuric acid in a sealed stainless steel autoclave, not plain hot water. The methods report 180°C for 24 hours. [1] ASME describes that hold as pressure cooking and does not name the acid. [3]",
   },
   {
     term: "Activation",
@@ -55,7 +55,8 @@ const terms: { term: string; meaning: string }[] = [
   },
   {
     term: "Nanosheet",
-    meaning: "A carbon sheet about 10–30 nanometers thick, the electrode material the paper reports. [1]",
+    meaning:
+      "The thinnest sheets the paper reports, about 10–30 nanometers, are the 800°C sample, CNS-800. Sheets from the cooler activation runs were thicker. [1]",
   },
 ];
 

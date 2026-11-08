@@ -16,7 +16,7 @@ export const layers: {
     id: "s2",
     name: "S2, the useful wall",
     range: "Microfibrils about 10–30 nm across",
-    body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then pries the fibrils into sheets of about that thickness. “Pries apart” is their picture of the process, not a settled fact. [1] [6]",
+    body: "The thick middle layer, built from cellulose microfibrils about 10–30 nm across. The authors propose that hydrothermal treatment loosens it, and that molten potassium hydroxide then separates the fibrils into sheets. “Pries apart” is their picture of the process, not a settled fact. The measured sheets that are 10–30 nm thick are the 800°C sample, not every activation temperature. [1] [6]",
   },
   {
     id: "s3",
@@ -57,20 +57,21 @@ export const stations: Station[] = [
       "Hemp bast fiber is the precursor they report. Flowers, resin, and oil are not part of that experiment. [1]",
     equipment: "A fiber mill, or hand separation of retted stalk. No chemistry yet.",
     notHome:
-      "Under 7 U.S.C. § 1639o, hemp is Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [4] [5]",
+      "As of November 8, 2026, 7 U.S.C. § 1639o defines hemp as Cannabis sativa L. with a delta-9 THC concentration of not more than 0.3 percent on a dry-weight basis. “Not more than” includes 0.3 percent. It does not say “under.” [4] Public Law 119-37 rewrites that plant test as total THC, including THCA, still not more than 0.3 percent. The Code note dates the rewrite 365 days after November 12, 2025. [4] Congress later delayed the plant-threshold change to December 11, 2026. [7] Growing it still takes a license or authorization under a state hemp program, a tribal hemp program, or the USDA hemp program. This page is not that license, and it is not legal advice. [5]",
   },
   {
     id: "hydro",
     n: "02",
-    title: "Loosen the wall in hot water",
-    summary: "A sealed vessel holds the fiber in hot water. ASME reports 180°C for 24 hours. The paper’s own account of the step is the chemistry, not a timer you should copy.",
-    hazard: "Pressurized hot liquid. A failed seal is a steam explosion.",
+    title: "Loosen the wall in acidified water",
+    summary:
+      "The methods hold the fiber in diluted sulfuric acid, inside a sealed stainless steel autoclave. This page names that fact. It does not give the procedure.",
+    hazard: "Hot diluted acid under pressure. A failed seal is a chemical burn and a steam blast.",
     changes:
       "The authors write that most of the hemicellulose, and part of the lignin, dissolve, that crystalline cellulose is only partly carbonized, and that S1 and S3 come away while S2 loosens. That is their proposed account of why sheets can form later. [6]",
     conditions:
-      "The paper describes hydrothermal carbonization at 180°C. The 24-hour hold is in the ASME account of the same work, not a line this guide found in the abstract. [1] [3] [6]",
+      "The paper’s methods use diluted sulfuric acid in a sealed stainless steel autoclave at 180°C for 24 hours. [1] ASME’s shorter account says the fiber was pressure-cooked at 180°C for 24 hours and does not mention the acid. [3] Neither line is a recipe.",
     equipment:
-      "A hydrothermal autoclave rated for the vapor pressure of water at that temperature, with a chemically compatible liner, in a lab that can vent and contain a failure.",
+      "A sealed stainless steel autoclave, for acid under pressure, in a lab that can vent and contain a failure. This page does not give the acid strength.",
     notHome:
       "A kitchen pressure cooker is the wrong vessel. It is not rated for this, it is not meant to hold plant slurry against a failed gasket, and it will contaminate anything you eat from afterwards. There is no safe substitute.",
   },
@@ -81,7 +82,7 @@ export const stations: Station[] = [
     summary: "The hydrochar is heated with potassium hydroxide. The paper discusses 700–800°C. ASME says the heat reached as high as 800°C.",
     hazard: "Molten caustic at furnace temperature. Severe burns even before it is hot.",
     changes:
-      "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements, rather than that proposal, are a surface area up to 2,287 m²/g, mesoporosity up to 58 percent, conductivity about 211–226 S/m, and sheets about 10–30 nm thick. The sheets are partially graphitic carbon. Samples are named by activation temperature. [1]",
+      "The authors propose that the KOH melt gets into the loosened gaps and separates S2 into interconnected sheets, while also etching micropores and mesopores. That is their account. [6] The measurements are not one sample. A surface area of 2,287 m²/g is CNS-750. The 10–30 nm sheets are CNS-800, which also has the highest mesopore volume in the series, about 58 percent of pore volume. Conductivity across the series is about 211–226 S/m. The sheets are partially graphitic carbon. The abstract lists those peaks together. [1]",
     conditions: "Potassium hydroxide activation. The paper’s range is 700–800°C. [6] ASME’s ceiling is 800°C. [3] Neither source is a recipe with amounts.",
     equipment:
       "A furnace that can hold that temperature, an inert or controlled atmosphere, a boat that KOH will not destroy, and a fume hood. KOH attacks skin, eyes, aluminum, and glass.",
@@ -95,7 +96,7 @@ export const stations: Station[] = [
     summary: "Residual alkali has to leave the carbon before it is an electrode. This page does not say how.",
     hazard: "Caustic waste. Do not neutralize it at home.",
     changes:
-      "This station is here so the alkali is not forgotten. The figures belong to carbons a laboratory had already finished with. This page does not describe a wash, an acid, or a way to treat leftover potassium hydroxide.",
+      "The paper reports that after activation the carbons were washed with hydrochloric acid and distilled water. [1] This page does not describe that wash, the strength, or what to do with the waste. These stations are a research summary, not the full method.",
     conditions: "A laboratory wash, then drying. This guide does not give volumes, acids, or a neutralization method.",
     equipment: "Whatever that lab used to filter and collect alkali waste. Not a kitchen sink.",
     notHome:
@@ -185,7 +186,7 @@ export const checks: CheckQ[] = [
       { id: "skip", label: "To avoid needing a furnace" },
     ],
     answer: "loosen",
-    why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours are from the ASME account. [3]",
+    why: "That is the authors’ account: much of the hemicellulose leaves, and the S2 microfibrils loosen. [6] It is not a claim that the fiber has become graphene, and the furnace step is still ahead. The 24 hours, and the diluted sulfuric acid in a sealed autoclave, are in the paper’s methods. [1] ASME repeats the time and does not name the acid. [3]",
   },
   {
     id: "device",
@@ -209,13 +210,13 @@ export const checks: CheckQ[] = [
       { id: "smell", label: "The pores store the plant’s oils, and the oils hold electrons" },
       {
         id: "double",
-        label: "Ions park on the carbon surface, so more wall means more charge",
+        label: "More accessible carbon surface can support more charge stored in the electric double layer",
       },
       { id: "mass", label: "Extra area makes the cell heavier, and weight is energy" },
       { id: "fuel", label: "The pores are filled with KOH, which is the fuel" },
     ],
     answer: "double",
-    why: "The double layer of this kind of cell forms on the carbon surface. That surface includes the walls inside the pores, which is why the abstract’s surface area, up to 2,287 m²/g, is the figure that matters. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores.",
+    why: "Charge in this cell sits in the electric double layer, on carbon surface the ions can reach, including pore walls. More of that accessible surface can support more stored charge. It is not automatic. The 2,287 m²/g figure is the CNS-750 sample, not every carbon in the paper. [1] The ions are not a fuel, and leftover potassium hydroxide is not supposed to stay in the pores.",
   },
 ];
 
